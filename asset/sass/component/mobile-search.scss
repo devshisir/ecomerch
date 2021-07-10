@@ -1,0 +1,32 @@
+.mobile_search_main_menu{
+   display: none !important;
+}
+.modal{
+   z-index: 99999999999999999999;
+}
+
+.search_modal_form{
+   .input_box{
+      position: relative;
+      width: 100%;
+      input{
+         width: 100%;
+         background: #fff;
+         border: none;
+         padding: 14px 30px 14px 50px;
+         font-weight: 500;
+         font-size: 13px;
+      }
+      span{
+         position: absolute;
+         top: 0;
+         background: rgba(221, 221, 221, 0.719);
+         height: 100%;
+         display: flex;
+         align-items: center;
+         width: 40px;
+         text-align: center;
+         justify-content: center;
+      }
+   }
+}
