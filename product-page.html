@@ -12,6 +12,8 @@
    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
    <link rel="stylesheet" href="asset/css/fontawsome.css">
    <link rel="stylesheet" href="asset/css/plugin/owl.carousel.min.css">
+   <link rel="stylesheet" href="asset/css/plugin/skins/all.css">
+   <link rel="stylesheet" href="asset/css/plugin/nice-select.css">
    <link rel="stylesheet" href="asset/css/style.css">
    <link rel="stylesheet" href="asset/css/responsive.css">
    <!-- this is for mordanizar js link -->
@@ -1673,101 +1675,700 @@
    </div>
    <!-- end sidebar mobile menu  -->
 
-   <!-- start banar slider area  -->
-   <section id="banar_slider">
+
+
+   <!-- start bread come info area  -->
+   <section id="breadcome_area">
       <div class="container-fluid">
          <div class="row">
             <div class="col-12">
-               <div class="banar_slider_active owl-carousel">
-                  <div class="banar_slider_item">
-                     <a href="#">
-                        <picture>
-                           <source 
-                              media="(max-width: 575px)"
-                              srcset="https://via.placeholder.com/600x500">
-                              <source 
-                              media="(max-width: 767px)"
-                              srcset="https://via.placeholder.com/900x500">
-                           <img src="https://via.placeholder.com/1920x700" alt="a cute kitten">
-                        </picture>
-                     </a>
-                  </div>
-                  <div class="banar_slider_item">
-                     <a href="#">
-                        <picture>
-                           <source 
-                              media="(max-width: 575px)"
-                              srcset="https://via.placeholder.com/600x500">
-                              <source 
-                              media="(max-width: 767px)"
-                              srcset="https://via.placeholder.com/900x500">
-                           <img src="https://via.placeholder.com/1920x700" alt="a cute kitten">
-                        </picture>
-                     </a>
-                  </div>
-                  <div class="banar_slider_item">
-                     <a href="#">
-                        <picture>
-                           <source 
-                              media="(max-width: 575px)"
-                              srcset="https://via.placeholder.com/600x500">
-                              <source 
-                              media="(max-width: 767px)"
-                              srcset="https://via.placeholder.com/900x500">
-                           <img src="https://via.placeholder.com/1920x700" alt="a cute kitten">
-                        </picture>
-                     </a>
-                  </div>
-                  <div class="banar_slider_item">
-                     <a href="#">
-                        <picture>
-                           <source 
-                              media="(max-width: 575px)"
-                              srcset="https://via.placeholder.com/600x500">
-                              <source 
-                              media="(max-width: 767px)"
-                              srcset="https://via.placeholder.com/900x500">
-                           <img src="https://via.placeholder.com/1920x700" alt="a cute kitten">
-                        </picture>
-                     </a>
-                  </div>
-                  <div class="banar_slider_item">
-                     <a href="#">
-                        <picture>
-                           <source 
-                              media="(max-width: 575px)"
-                              srcset="https://via.placeholder.com/600x500">
-                              <source 
-                              media="(max-width: 767px)"
-                              srcset="https://via.placeholder.com/900x500">
-                           <img src="https://via.placeholder.com/1920x700" alt="a cute kitten">
-                        </picture>
-                     </a>
-                  </div>
+               <div class="breadcome_content">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li>/</li>
+                     <li>Brand Fashion Store</li>
+                  </ul>
+               </div>
+               <div class="product_info_count">
+                  <h4><span>Myntra Fashion Store</span> - 875565 items</h4>
                </div>
             </div>
          </div>
       </div>
    </section>
-   <!-- start banar slider area  -->
+   <!-- end bread come info area  -->
 
-   <!-- start payment method info area  -->
-   <section id="payment_method_info">
+
+   <!-- product page main area  -->
+   <section id="product_page_main_wrapper">
       <div class="container-fluid">
          <div class="row">
-            <div class="col-12">
-               <div class="payment_info_wrapper">
-                  <div class="row">
-                     <div class="col-xxl-7 mx-auto">
-                        <div class="row align-items-center">
-                           <div class="col-xxl-4 col-lg-4 col-md-4">
-                              <div class="bank_image text-center">
-                                 <img src="asset/img/hdfc-bank.png" alt="">
+            <div class="col-xxl-2 pr0">
+               <div class="product_filter_left">
+                  <div class="filter_tite">
+                     <h4>Filters</h4>
+                  </div>
+                  <div class="category_filter">
+                     <ul>
+                        <li>
+                           <input type="radio" id="man" name="cat_fil">
+                           <label for="man">Man</label>
+                         </li>
+                         <li>
+                           <input type="radio" id="woman" name="cat_fil">
+                           <label for="woman">Woman</label>
+                         </li>
+                         <li>
+                           <input type="radio" id="boys" name="cat_fil">
+                           <label for="boys">Boys</label>
+                         </li>
+                         <li>
+                           <input type="radio" id="girls" name="cat_fil">
+                           <label for="girls">Girls</label>
+                         </li>
+                     </ul>
+                  </div>
+                  <div class="categories_filter">
+                     <h4>CATEGORIES</h4>
+                     <ul>
+                        <li>
+                           <input type="checkbox" id="shirts" name="thirts">
+                           <label for="shirts">Shirts <span>(1323)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="tshirts" name="tshirts">
+                           <label for="tshirts">Tshirts <span>(911)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="casual-shoes" name="casual-shoes">
+                           <label for="casual-shoes">Casual Shoes <span>(597)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="jens" name="jens">
+                           <label for="jens">Jens <span>(350)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="trouser" name="trouser">
+                           <label for="trouser">Trousers <span>(274)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="jacket" name="jacket">
+                           <label for="jacket">Jackets <span>(274)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="sweatshirts" name="sweatshirts">
+                           <label for="sweatshirts">Sweatshirts <span>(248)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="flipflops" name="flipflops">
+                           <label for="flipflops">Flip Flops <span>(192)</span></label>
+                        </li>
+                        <li>
+                           <a href="#">+ 28 more</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="categories_filter">
+                     <h4>Brand</h4>
+                     <ul>
+                        <li>
+                           <input type="checkbox" id="brand1" name="brand1">
+                           <label for="brand1">U.S. Polo Assn. <span>(3923)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="brand2" name="brand2">
+                           <label for="brand2">U.S. Polo Assn. Denim Co. <span>(1027)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="brand3" name="brand3">
+                           <label for="brand3">U.S. Polo Assn. Tailored <span>(82)</span></label>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="categories_filter">
+                     <h4>Price</h4>
+                     <ul>
+                        <li>
+                           <input type="checkbox" id="price1" name="price1">
+                           <label for="price1">Rs. 159 to Rs. 4369 <span>(4914)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="price2" name="price2">
+                           <label for="price2">Rs. 4369 to Rs. 8579 <span>(106)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="price3" name="price3">
+                           <label for="price3">Rs. 8579 to Rs. 12789 <span>(11)</span></label>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="categories_filter">
+                     <h4>COLOR</h4>
+                     <ul>
+                        <li>
+                           <input type="checkbox" id="shirts" name="thirts">
+                           <label for="shirts"><span class="color_dot" style="background-color: blue;"></span> Blue <span>(1323)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="tshirts" name="tshirts">
+                           <label for="tshirts"><span class="color_dot" style="background-color: navy;"></span> Navy Blue <span>(911)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="casual-shoes" name="casual-shoes">
+                           <label for="casual-shoes"><span class="color_dot" style="background-color: black;"></span> Black <span>(597)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="jens" name="jens">
+                           <label for="jens"><span class="color_dot" style="background-color: white;"></span> White <span>(350)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="trouser" name="trouser">
+                           <label for="trouser"><span class="color_dot" style="background-color: gray;"></span> Grey <span>(274)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="jacket" name="jacket">
+                           <label for="jacket"><span class="color_dot" style="background-color: red;"></span> Red <span>(274)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="sweatshirts" name="sweatshirts">
+                           <label for="sweatshirts"><span class="color_dot" style="background-color: green;"></span> Green <span>(248)</span></label>
+                        </li>
+                        <li>
+                           <a href="#">+ 30 more</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="category_filter">
+                     <h4>DISCOUNT RANGE</h4>
+                     <ul>
+                        <li>
+                           <input type="radio" id="d1" name="discount_range">
+                           <label for="d1">10% and above</label>
+                         </li>
+                         <li>
+                           <input type="radio" id="d2" name="discount_range">
+                           <label for="d2">20% and above</label>
+                         </li>
+                         <li>
+                           <input type="radio" id="d3" name="discount_range">
+                           <label for="d3">30% and above</label>
+                         </li>
+                         <li>
+                           <input type="radio" id="d4" name="discount_range">
+                           <label for="d4">50% and above</label>
+                         </li>
+                         <li>
+                           <input type="radio" id="d5" name="discount_range">
+                           <label for="d5">60% and above</label>
+                         </li>
+                         <li>
+                           <input type="radio" id="d6" name="discount_range">
+                           <label for="d6">70% and above</label>
+                         </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-10 pl0">
+               <div class="product_main_wrapper">
+                  <div class="filter_shortby text-end">
+                     <select>
+                        <option value="0">Sort by : Recommended</option>
+                        <option value="1">Sort by : Whats new</option>
+                        <option value="1">Sort by : Popularity</option>
+                        <option value="1">Sort by : Better Discount</option>
+                        <option value="1">Sort by : Price: High to Low</option>
+                        <option value="1">Sort by : Price: Low to High</option>
+                        <option value="1">Sort by : Customer Rating</option>
+                     </select>
+                  </div>
+                  <div class="product_main_container">
+                     <div class="row">
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
                               </div>
                            </div>
-                           <div class="col-xxl-8 col-lg-8 col-md-8">
-                              <div class="info_box">
-                                 <p><span>Up to 12% Instant Discount*</span> On HDFC Bank Cards & EasyEMI</p>
+                        </div>
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="col-xxl-2">
+                           <div class="single_product_item">
+                              <div class="image_box">
+                                 <a href="#">
+                                    <img class="img-fluid" src="https://via.placeholder.com/210x280" alt="">
+                                 </a>
+                                 <div class="wishlist_btn">
+                                    <a href="#"><i class="fal fa-heart"></i> Wishlist</a>
+                                 </div>
+                                 <div class="product_popup_action">
+                                    <ul>
+                                       <li><a href="#" title="Add to compare"><i class="fa fa-align-left"></i></a></li>
+                                       <li><a href="#" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                       <li><a href="#" title="Add to cart"><i class="fa fa-shopping-basket"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="content_box">
+                                 <a href="#">U.S. Polo Assn.</a>
+                                 <p>Men Colourblocked Sneakers</p>
+                                 <h5><b>Rs.1949</b> <span>Rs.2999</span> (35% OFF)</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="product_page_pagination">
+                     <div class="row align-items-center">
+                        <div class="col-xxl-4">
+                           <div class="product_page_count">
+                              <p>Page 1 of 101</p>
+                           </div>
+                        </div>
+                        <div class="col-xxl-8">
+                           <div class="pagination_content">
+                              <ul>
+                                 <li><a class="active" href="#">1</a></li>
+                                 <li><a href="#">2</a></li>
+                                 <li><a href="#">3</a></li>
+                                 <li><a href="#">4</a></li>
+                                 <li><a href="#">5</a></li>
+                                 <li><a href="#">6</a></li>
+                                 <li><a href="#">7</a></li>
+                                 <li><a href="#">8</a></li>
+                                 <li><a href="#">9</a></li>
+                                 <li><a href="#">10</a></li>
+                              </ul>
+                              <div class="next_page">
+                                 <a href="#">Next <i class="far fa-angle-right"></i></a>
                               </div>
                            </div>
                         </div>
@@ -1778,1109 +2379,15 @@
          </div>
       </div>
    </section>
-   <!-- end payment method info area  -->
+   <!-- end product page main area  -->
 
 
-   <!-- start home page product section  -->
-   <section id="home_page_product">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-xxl-11 col-lg-12 mx-auto">
-               <div class="product_top_title text-center">
-                  <h3>Our Trending Products</h3>
-               </div>
-               <div class="home_product_slider_active owl-carousel">
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- end home page product section  -->
-
-   <!-- start home page product section  -->
-   <section id="home_page_product" class="popular_products">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-xxl-11 mx-auto">
-               <div class="product_top_title text-center">
-                  <h3>Our Popular Products</h3>
-               </div>
-               <div class="home_product_slider_active owl-carousel">
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- end home page product section  -->
-
-   <!-- start banar delivary info -->
-   <section id="banar_delevary">
-      <div class="container">
-         <div class="row">
-            <div class="col-12">
-               <div class="delevary_wrapper" style="background-image: url('./asset/img/banner-delivery-2.jpg');">
-                  <h4>Get Fast & Secure Deleviry</h4>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quaerat voluptas consequatur ratione, accusamus nemo laborum odio consequuntur necessitatibus dolores.</p>
-                  <a href="#">Start shoping</a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- end banar delivary info -->
 
 
-   <!-- start home page product section  -->
-   <section id="home_page_product">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-xxl-11 mx-auto">
-               <div class="product_top_title text-center">
-                  <h3>Our Offer In The Spotlight</h3>
-               </div>
-               <div class="home_product_slider_active owl-carousel">
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- end home page product section  -->
 
-   <!-- start shop for area  -->
-   <section id="shop_for_area">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-xxl-11 mx-auto">
-               <div class="top_title">
-                  <h4>Shop For Woman</h4>
-               </div>
-               <div class="shop_for_main_wrapper">
-                  <div class="row">
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Kurtas & Kurtas Set</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Sarees</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Dresses</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Lingerie</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Nightwear</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Jewellery</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Trackpants & Shorts</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Handbags</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- end shop for area  -->
 
-   <!-- start shop for area  -->
-   <section id="shop_for_area">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-xxl-11 mx-auto">
-               <div class="top_title">
-                  <h4>Shop For Man</h4>
-               </div>
-               <div class="shop_for_main_wrapper">
-                  <div class="row">
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>T-Shirts</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Loungewear</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Shirts</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Innerwear</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Trackpants</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Flip-Flops</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Sports Shoes</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xxl-3 col-lg-4 col-md-6">
-                        <div class="shop_for_item">
-                           <div class="image_box">
-                              <a href="#">
-                                 <img src="https://via.placeholder.com/150x150" alt="">
-                              </a>
-                           </div>
-                           <div class="content_box">
-                              <p>Kurtas & Kurtas Sets</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- end shop for area  -->
-   
-   <!-- start home page product section  -->
-   <section id="home_page_product">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-xxl-11 mx-auto">
-               <div class="product_top_title text-center">
-                  <h3>Our Top Category Products</h3>
-               </div>
-               <div class="home_product_slider_active owl-carousel">
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="product_slider_item">
-                     <div class="product_image">
-                        <a href="#">
-                           <img src="https://via.placeholder.com/230x230" alt="">
-                        </a>
-                     </div>
-                     <div class="product_info">
-                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
-                        <h4>$199.99</h4>
-                        <ul>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                           <li><i class="fa fa-star"></i></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- end home page product section  -->
+
+
 
    <!-- start footer area  -->
    <footer id="footer_area">
@@ -3004,7 +2511,18 @@
    <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
    <script src="asset/js/bootstrap.bundle.min.js"></script>
    <script src="asset/js/plugin/owl.carousel.min.js"></script>
+   <script src="asset/js/plugin/icheck.min.js"></script>
+   <script src="asset/js/plugin/jquery.nice-select.min.js"></script>
    <script src="asset/js/custom.js"></script>
+   <script>
+      $(document).ready(function(){
+      $('.category_filter input,.categories_filter input').iCheck({
+         checkboxClass: 'icheckbox_square-red',
+         radioClass: 'iradio_flat-red',
+         increaseArea: '20%' // optional
+      });
+      });
+   </script>
 </body>
 
 </html>

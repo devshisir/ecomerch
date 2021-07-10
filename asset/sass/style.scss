@@ -6,11 +6,31 @@
    padding: 0px 70px;
 }
 
+.pl0{
+   padding-left: 0px !important;
+}
+
+.pr0{
+   padding-right: 0px !important;
+}
+
 .psr{
    position: relative;
 }
 .pst{
    position: static;
+}
+.product_info_count{
+   margin-top: 10px;
+   h4{
+      font-size: 15px;
+      color: #878b94;
+      font-weight: 400;
+      span{
+         font-weight: 700;
+         color: $titleColor;
+      }
+   }
 }
 /*------------------------
 main code start here 
@@ -595,3 +615,9 @@ main code start here
 
 // start mobile search area 
 @import 'component/mobile-search.scss';
+
+// this is for bread come area 
+@import 'component/breadcome.scss';
+
+// this is for product page 
+@import 'page/product-page.scss';

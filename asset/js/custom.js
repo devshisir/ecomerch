@@ -55,10 +55,7 @@ $('.home_product_slider_active').owlCarousel({
     }
 })
 
-
-
-
-
+$('select').niceSelect();
 
 
 
