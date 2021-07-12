@@ -12,6 +12,8 @@
    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
    <link rel="stylesheet" href="asset/css/fontawsome.css">
    <link rel="stylesheet" href="asset/css/plugin/owl.carousel.min.css">
+   <link rel="stylesheet" href="asset/css/plugin/skins/all.css">
+   <link rel="stylesheet" href="asset/css/plugin/nice-select.css">
    <link rel="stylesheet" href="asset/css/style.css">
    <link rel="stylesheet" href="asset/css/responsive.css">
    <!-- this is for mordanizar js link -->
@@ -21,7 +23,7 @@
 <body>
    <!-- start header area  -->
    <header id="hedaer_main">
-      <div class="container-fluid">
+      <div class="container-fluid psr">
          <div class="row align-items-center">
             <div class="col-xxl-6 col-xl-6 col-lg-5 col-md-3 col-sm-3 col-4">
                <div class="header_left">
@@ -707,7 +709,7 @@
                   <div class="user_right_info">
                      <ul>
                         <li class="mobile_search_main_menu">
-                           <a href="#" data-bs-toggle="modal" data-bs-target="#searh_modal">
+                           <a href="#" class="mobile_search_btn">
                               <i class="fal fa-search"></i> 
                            </a>
                         </li>
@@ -756,24 +758,69 @@
                </div>
             </div>
          </div>
+         <div class="mobile_search_wrapper">
+            <div class="mobile_search_content">
+               <form action="#">
+                  <div class="input_box">
+                     <span class="close_mobile_search"><i class="far fa-long-arrow-left"></i></span>
+                     <input type="text" placeholder="Search Product Here...">
+                     <button class="submit_btn" type="submit"><i class="fa fa-search"></i></button>
+                     <span class="input_clear"><i class="far fa-times-circle"></i></span>
+                  </div>
+               </form>
+            </div>
+            <div class="mobile_search_suggestion">
+               <div class="item_box">
+                  <div class="left_info">
+                     <span><i class="fas fa-search"></i></span>
+                     <a href="#">Jackets Men</a>
+                  </div>
+                  <div class="right_info">
+                     <p>9851 <span><i class="fas fa-long-arrow-alt-left"></i></span></p>
+                  </div>
+               </div>
+               <div class="item_box">
+                  <div class="left_info">
+                     <span><i class="fas fa-search"></i></span>
+                     <a href="#">Jackets For Women</a>
+                  </div>
+                  <div class="right_info">
+                     <p>4945 <span><i class="fas fa-long-arrow-alt-left"></i></span></p>
+                  </div>
+               </div>
+               <div class="item_box">
+                  <div class="left_info">
+                     <span><i class="fas fa-search"></i></span>
+                     <a href="#">Jackets For Girls</a>
+                  </div>
+                  <div class="right_info">
+                     <p>1205 <span><i class="fas fa-long-arrow-alt-left"></i></span></p>
+                  </div>
+               </div>
+               <div class="item_box">
+                  <div class="left_info">
+                     <span><i class="fas fa-search"></i></span>
+                     <a href="#">Jackets Kurtas</a>
+                  </div>
+                  <div class="right_info">
+                     <p>63048 <span><i class="fas fa-long-arrow-alt-left"></i></span></p>
+                  </div>
+               </div>
+               <div class="item_box">
+                  <div class="left_info">
+                     <span><i class="fas fa-search"></i></span>
+                     <a href="#">Jackets For Boys</a>
+                  </div>
+                  <div class="right_info">
+                     <p>1927 <span><i class="fas fa-long-arrow-alt-left"></i></span></p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
    </header>
    <!-- end header area  -->
 
-   <!-- mobile sreah modal  -->
-   <div class="modal fade search_modal_form" id="searh_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-         <div class="modal-content">
-            <form action="#">
-               <div class="input_box">
-                  <input type="text" placeholder="Search product here..">
-                  <span><i class="far fa-search"></i></span>
-               </div>
-            </form>
-         </div>
-      </div>
-   </div>
-   <!-- end mobile sreah modal  -->
 
    <!-- sidebar mobile menu  -->
    <div class="offcanvas offcanvas_sidebar offcanvas-start" tabindex="-1" id="sidebar_offcanvas_menu" aria-labelledby="offcanvasExampleLabel">
@@ -1751,6 +1798,8 @@
    </section>
    <!-- start banar slider area  -->
 
+
+
    <!-- start payment method info area  -->
    <section id="payment_method_info">
       <div class="container-fluid">
@@ -1779,6 +1828,70 @@
       </div>
    </section>
    <!-- end payment method info area  -->
+
+   <!-- start shop by category area  -->
+   <section id="shop_by_category">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xxl-11 mx-auto">
+               <div class="top_title text-center">
+                  <h4>Shop By Category</h4>
+               </div>
+               <div class="shop_category_slider_active owl-carousel">
+                  <div class="single_cat_item text-center">
+                     <a href="#">
+                        <img src="https://via.placeholder.com/100x100" alt="">
+                        <span>Man</span>
+                     </a>
+                  </div>
+                  <div class="single_cat_item text-center">
+                     <a href="#">
+                        <img src="https://via.placeholder.com/100x100" alt="">
+                        <span>Woman</span>
+                     </a>
+                  </div>
+                  <div class="single_cat_item text-center">
+                     <a href="#">
+                        <img src="https://via.placeholder.com/100x100" alt="">
+                        <span>Kids</span>
+                     </a>
+                  </div>
+                  <div class="single_cat_item text-center">
+                     <a href="#">
+                        <img src="https://via.placeholder.com/100x100" alt="">
+                        <span>Beauty</span>
+                     </a>
+                  </div>
+                  <div class="single_cat_item text-center">
+                     <a href="#">
+                        <img src="https://via.placeholder.com/100x100" alt="">
+                        <span>Home</span>
+                     </a>
+                  </div>
+                  <div class="single_cat_item text-center">
+                     <a href="#">
+                        <img src="https://via.placeholder.com/100x100" alt="">
+                        <span>Footwear</span>
+                     </a>
+                  </div>
+                  <div class="single_cat_item text-center">
+                     <a href="#">
+                        <img src="https://via.placeholder.com/100x100" alt="">
+                        <span>Gadgets</span>
+                     </a>
+                  </div>
+                  <div class="single_cat_item text-center">
+                     <a href="#">
+                        <img src="https://via.placeholder.com/100x100" alt="">
+                        <span>Jewellery</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end shop by category area  -->
 
 
    <!-- start home page product section  -->
@@ -1994,6 +2107,80 @@
       </div>
    </section>
    <!-- end home page product section  -->
+
+   <!-- start biggest_dell_area -->
+   <section id="biggest_dell_on_brand">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xxl-11 mx-auto">
+               <div class="top_title text-center">
+                  <h4>BIGGEST DEALS ON TOP BRANDS</h4>
+               </div>
+               <div class="main_wrapper">
+                  <div class="row">
+                     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="nonslide_product_item">
+                           <a href="#">
+                              <img src="https://via.placeholder.com/326x400" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="nonslide_product_item">
+                           <a href="#">
+                              <img src="https://via.placeholder.com/326x400" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="nonslide_product_item">
+                           <a href="#">
+                              <img src="https://via.placeholder.com/326x400" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="nonslide_product_item">
+                           <a href="#">
+                              <img src="https://via.placeholder.com/326x400" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="nonslide_product_item">
+                           <a href="#">
+                              <img src="https://via.placeholder.com/326x400" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="nonslide_product_item">
+                           <a href="#">
+                              <img src="https://via.placeholder.com/326x400" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="nonslide_product_item">
+                           <a href="#">
+                              <img src="https://via.placeholder.com/326x400" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="nonslide_product_item">
+                           <a href="#">
+                              <img src="https://via.placeholder.com/326x400" alt="">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end biggest_dell_area -->
 
    <!-- start home page product section  -->
    <section id="home_page_product" class="popular_products">
@@ -2981,29 +3168,12 @@
    <!-- end footer area  -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <div class="fake"></div>
    <!-- all javascript load here -->
    <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
    <script src="asset/js/bootstrap.bundle.min.js"></script>
    <script src="asset/js/plugin/owl.carousel.min.js"></script>
+   <script src="asset/js/plugin/icheck.min.js"></script>
+   <script src="asset/js/plugin/jquery.nice-select.min.js"></script>
    <script src="asset/js/custom.js"></script>
 </body>
 

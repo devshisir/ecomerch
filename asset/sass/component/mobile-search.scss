@@ -1,32 +1,110 @@
 .mobile_search_main_menu{
    display: none !important;
 }
-.modal{
-   z-index: 99999999999999999999;
-}
-
-.search_modal_form{
+.mobile_search_wrapper{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: #fff;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.4s;
+   width: 0px;
    .input_box{
       position: relative;
       width: 100%;
+      border-bottom: 1px solid rgba(221, 221, 221, 0.658);
+      padding: 12px 0px;
+      .close_mobile_search{
+         position: absolute;
+         left: 15px;
+         top: 50%;
+         transform: translateY(-50%);
+      }
       input{
          width: 100%;
-         background: #fff;
+         display: block;
          border: none;
-         padding: 14px 30px 14px 50px;
+         padding: 10px 50px;
          font-weight: 500;
-         font-size: 13px;
+         font-size: 12px;
+         &:focus{
+            .mobile_search_suggestion{
+               opacity: 1;
+               visibility: visible;
+            }
+         }
       }
-      span{
+      .submit_btn{
          position: absolute;
-         top: 0;
-         background: rgba(221, 221, 221, 0.719);
-         height: 100%;
-         display: flex;
-         align-items: center;
-         width: 40px;
-         text-align: center;
-         justify-content: center;
+         right: 15px;
+         top: 50%;
+         transform: translateY(-50%);
+         border: none;
+         background: transparent;
+         color: #EB4B7D;
+      }
+      .input_clear{
+         position: absolute;
+         right: 50px;
+         top: 50%;
+         transform: translateY(-50%);
+         border: none;
+         background: transparent;
+         color: $titleColor;
+         font-size: 16px;
       }
    }
+   .mobile_search_suggestion{
+      background: #fff;
+      padding: 10px 20px;
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+      opacity: 0;
+      visibility: hidden;
+      .item_box{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 14px;
+         .left_info{
+            span{
+               font-size: 13px;
+            }
+            a{
+               font-weight: 500;
+               font-size: 13px;
+               color: rgb(143, 138, 138);
+               margin-left: 4px;
+               &:hover{
+                  text-decoration: underline;
+                  color: #EB4B7D;
+               }
+            }
+         }
+         .right_info{
+            p{
+               font-size: 13px;
+               i{
+                  margin-left: 5px;
+                  transform: rotate(45deg);
+                  color: rgb(155, 152, 152);
+               }
+            }
+         }
+      }
+      &:last-child{
+         margin-bottom: 0px;
+      }
+   }
+   .mobile_search_suggestion.show{
+      opacity: 1;
+      visibility: visible;
+   }
+}
+.mobile_search_wrapper.show{
+   opacity: 1;
+   visibility: visible;
+   width: 100%;
 }
