@@ -138,6 +138,31 @@ $('.category_content_mobile li').on('click',function(){
     $(this).toggleClass('active');
 })
 
+$('.size_content_mobile li').on('click',function(){
+    $('.size_content_mobile li').removeClass('active');
+    $(this).toggleClass('active');
+})
+
+$('.brand_content_mobile li').on('click',function(){
+    $('.brand_content_mobile li').removeClass('active');
+    $(this).toggleClass('active');
+})
+
+$('.color_content_mobile li').on('click',function(){
+    $('.color_content_mobile li').removeClass('active');
+    $(this).toggleClass('active');
+})
+
+$('.discount_content_mobile li').on('click',function(){
+    $('.discount_content_mobile li').removeClass('active');
+    $(this).toggleClass('active');
+})
+
+$('.country_content_mobile li').on('click',function(){
+    $('.country_content_mobile li').removeClass('active');
+    $(this).toggleClass('active');
+})
+
 
     
 });
