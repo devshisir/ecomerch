@@ -1,0 +1,141 @@
+
+
+
+
+
+
+
+
+#product_details_main{
+   padding: 50px 0px;
+   background-color: #fff;
+   .product_image_area{
+      .down_product_thumb_slide{
+         display: flex;
+         align-items: center;
+         height: 100%;
+         position: relative;
+         .product_thumb_slide_item{
+            margin-bottom:10px;
+            cursor: pointer;
+            img{
+               border: 2px solid #e5e5e5;
+               border-radius: 4px;
+               transition: 0.4s;
+            }
+         }
+         .slick-current{
+            img{
+               border-color: #ff3e6c;
+            }
+         }
+         .arrow_left{
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            z-index: 9999999;
+            height: 40px;
+            width: 40px;
+            border: none;
+            color: $titleColor;
+            background-color: transparent;
+            text-align: center;
+            line-height: 40px;
+            transition: 0.4s;
+            transform: rotate(90deg);
+            font-size: 35px;
+            &:hover{
+               opacity: 1 !important;
+            }
+         }
+         .arrow_right{
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            z-index: 9999999;
+            height: 40px;
+            width: 40px;
+            border: none;
+            color: $titleColor;
+            background-color: transparent;
+            text-align: center;
+            line-height: 40px;
+            transition: 0.4s;
+            transform: rotate(90deg);
+            font-size: 35px;
+            &:hover{
+               opacity: 1 !important;
+            }
+         }
+      }
+      .main_product_slide{
+         position: relative;
+         .main_product_item_slide{
+            cursor: crosshair;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            img{
+               border-radius: 4px;
+            }
+            .drift-zoom-pane.drift-open{
+               border-radius: 4px;
+            }
+         }
+         .arrow_left{
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            z-index: 9999999;
+            height: 40px;
+            width: 40px;
+            background-color: $titleColor;
+            border: none;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            transition: 0.4s;
+            opacity: 0;
+            visibility: hidden;
+            &:hover{
+               opacity: 1 !important;
+            }
+         }
+         .arrow_right{
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            z-index: 9999999;
+            height: 40px;
+            width: 40px;
+            background-color: $titleColor;
+            border: none;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            transition: 0.4s;
+            opacity: 0;
+            visibility: hidden;
+            &:hover{
+               opacity: 1 !important;
+            }
+         }
+         &:hover{
+            .arrow_left{
+               opacity: 0.5;
+               visibility: visible;
+               left: 20px;
+            }
+            .arrow_right{
+               opacity: 0.5;
+               visibility: visible;
+               right: 20px;
+            }
+         }
+      }
+      
+   }
+}
+
+
