@@ -1,0 +1,173 @@
+.tab-content{
+    height: 100%;
+    .tab-pane{
+        height: 100%;
+    }
+}
+.payment_method_page_wrapper{
+    height: 100%;
+    .nav{
+        width: 250px;
+        background-color: #FFF1EC;
+        height: 100%;
+        .nav-link{
+            text-align: left !important;
+            display: flex;
+            align-items: center;
+            border-radius: 0px;
+            padding: 10px 20px;
+            height: 55px;
+            i{
+                margin-right: 10px;
+                font-size: 17px;
+                min-width: 25px;
+            }
+            font-weight: 600;
+            font-size: 12px;
+            color: #000;
+        }
+        .active{
+            background-color: #ff3f6c;
+            color: #fff;
+            
+        }
+    }
+}
+
+.inside_content_flex{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .main_content{
+        width: 100%;
+        padding-right: 20px;
+    }
+}
+
+.place_order_btn{
+    margin-top: 30px;
+    a{
+        display: block;
+        width: 100%;
+        background-color: #ff3f6c;
+        color: #fff;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 12px 0px;
+        border-radius: 4px;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+//cash_on_delivery_content
+.cash_on_delivery_content{
+    padding: 30px 0px;
+    h4{
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    canvas{
+        display: block;
+        padding: 10px 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    input{
+        width: 300px;
+        border: 1px solid #ddd;
+        padding: 9px 15px;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    h6{
+        font-weight: 600;
+        font-size: 11px;
+        color: #ff3f6c;
+        margin-top: 7px;
+    }
+    p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+} 
+
+
+// credit_debit_cart_content
+.credit_debit_cart_content{
+    padding: 30px 0px;
+    h4{
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .card-wrapper{
+        margin-top: 50px;
+    }
+    #card_form{
+        margin-top: 30px;
+    }
+    .input_box{
+        margin-bottom: 15px;
+        input{
+            padding: 10px 20px;
+            font-weight: 500;
+            font-size: 14px;
+            height: calc(48px + 2px);
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        label{
+            left: 20px;
+            display: flex;
+            align-items: center;
+            height: 100% !important;
+            padding: 0px !important;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        .info_error{
+            margin-top: -10px;
+            font-size: 11px;
+            color: #ff3f6c;
+            font-weight: 500;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+            opacity: 1;
+            background-color: #fff;
+            height: auto !important;
+            padding: 0px 10px !important;
+            left: 15px !important;
+            color: rgba(51, 51, 51, 0.733);
+        }
+        .form-floating>.form-control.is-invalid:focus~label, .form-floating>.form-control.is-invalid:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+            color: #ff3f6c !important;
+        }
+        .form-floating>.form-control.is-valid:focus~label, .form-floating>.form-control.is-valid:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+            color: green !important;
+        }
+        .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+            padding-top: 15px;
+        }
+    }
+    .save_card_details{
+        li{
+            list-style: none;
+            label{
+                font-weight: 600;
+                font-size: 12px;
+                margin-left: 10px;
+                cursor: pointer;
+                color: #ff3f6c;
+            }
+        }
+    }
+}

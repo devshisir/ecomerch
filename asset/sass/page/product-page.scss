@@ -51,6 +51,7 @@
       .categories_filter{
          border-bottom: 1px solid #edebef;
          padding: 15px 10px;
+         position: relative;
          h4{
             font-weight: 700;
             font-size: 13px;
@@ -58,6 +59,8 @@
          }
          ul{
             margin-top: 15px;
+            max-height: 210px;
+            overflow-y: hidden;
             li{
                margin-bottom: 6px;
                &:last-child{
@@ -85,6 +88,12 @@
                   border: 1px solid #edebef;
                }
             }
+         }
+         ul.full_expend{
+            max-height: 100%;
+         }
+         li{
+            list-style: none;
             a{
                padding-left: 30px;
                margin-top: 5px;
@@ -96,6 +105,74 @@
          }
          .icheckbox_square-red{
             transform: scale(0.9);
+         }
+
+         // this is for popup category select category 
+         .popup_filter_categories{
+            position: absolute;
+            width: 980px;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 99999;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.1);
+            border: 1px solid #eaeaec;
+            border-radius: 4px;
+            opacity: 0;
+            visibility: hidden;
+            .top_area_title{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               padding: 10px 30px;
+               border-bottom: 1px solid #eaeaec;
+               .search_box{
+                  input{
+                     width: 300px;
+                     border: 1px solid #eaeaec;
+                     padding: 10px 20px;
+                     font-weight: 500;
+                     font-size: 14px;
+                     border-radius: 4px;
+                  }
+               }
+               .close_popup{
+                  border: 1px solid #eaeaec;
+                  height: 35px;
+                  width: 35px;
+                  text-align: center;
+                  line-height: 35px;
+                  border-radius: 4px;
+                  cursor: pointer;
+               }
+            }
+            .categories_item_main_box{
+               padding: 20px 30px;
+               display: flex;
+               justify-content: flex-start;
+               flex-wrap: wrap;
+               .main_item{
+                  margin-right: 20px;
+                  h4{
+                     font-size: 14px;
+                     text-transform: uppercase;
+                  }
+                  ul{
+                     margin-top: 4px;
+                     margin-bottom: 10px;
+                     li.empty{
+                        font-weight: 500;
+                        font-size: 13px;
+                        color: #94969f;
+                     }
+                  }
+               }
+            }
+         }
+         .popup_filter_categories.full_expend{
+            opacity: 1;
+            visibility: visible;
+            transition: 0.4s;
          }
       }
    }
@@ -745,6 +822,9 @@
    .product_page_pagination .pagination_content{
       margin-top: 10px;
    }
+   #product_page_main_wrapper .product_filter_left .categories_filter .popup_filter_categories{
+      width: 850px;
+   }
 }
 
 
@@ -763,6 +843,9 @@
    .product_page_pagination .pagination_content .next_page{
       margin-left: 0px;
       margin-top: 15px;
+   }
+   #product_page_main_wrapper .product_filter_left .categories_filter .popup_filter_categories{
+      width: 700px;
    }
 }
 

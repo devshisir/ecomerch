@@ -151,6 +151,21 @@ main code start here
                transform: translateY(-50%);
                color: #9495A5;
             }
+            .main_product_input_clear{
+               position: absolute;
+               height: 100%;
+               right: 0;
+               display: flex;
+               top: 0;
+               align-items: center;
+               padding: 0px 15px;
+               cursor: pointer;
+               transition: 0.4s;
+               display: none;
+               &:hover{
+                  color: #ff3f6c;
+               }
+            }
          }
       }
 
@@ -176,6 +191,37 @@ main code start here
                      color: #ff3f6c;
                   }
                }
+            }
+         }
+      }
+   }
+}
+
+//promotional_banar
+#promotional_banar{
+   padding: 20px 0px;
+   background-color: #333;
+   .promotional_banar_content{
+      position: relative;
+      .promotion_banar_close{
+         position: absolute;
+         top: 50%;
+         right: 0;
+         color: #fff;
+         transform: translateY(-50%);
+         font-size: 20px;
+         cursor: pointer;
+      }
+      h4{
+         font-size: 17px;
+         color: #fff;
+         font-weight: 400;
+         a{
+            color: #fff;
+            text-decoration: underline;
+            margin-left: 5px;
+            &:hover{
+               color: #ff3f6c;
             }
          }
       }
@@ -685,6 +731,24 @@ main code start here
 // this is for product page 
 @import 'page/product-page.scss';
 
-
 // this is for product details page 
 @import 'page/product-details.scss';
+
+// this is for order confirmation page scss link 
+@import 'page/order-confirmation.scss';
+
+// this is for add to cart page design
+@import 'page/cart-page.scss';
+
+// adress-page-cart
+@import 'page/adress-page-cart.scss';
+
+// payment method page
+@import 'page/payment-method-page.scss';
+
+// all the bottom include responsive.scss file
+@import 'import/responsive.scss'
+
+
+
+

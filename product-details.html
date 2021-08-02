@@ -17,7 +17,6 @@
    <link rel="stylesheet" href="asset/css/plugin/slick.css">
    <link rel="stylesheet" href="asset/css/plugin/drift-basic.min.css">
    <link rel="stylesheet" href="asset/css/style.css">
-   <link rel="stylesheet" href="asset/css/responsive.css">
    <!-- this is for mordanizar js link -->
    <script src="asset/js/vendor/modernizr-3.6.0.min.js"></script>
 </head>
@@ -701,7 +700,8 @@
                   <div class="search_box">
                      <form action="#">
                         <div class="input_box">
-                           <input type="text" placeholder="Search for products, brands and more">
+                           <input id="main_product_search" type="text" placeholder="Search for products, brands and more">
+                           <span class="main_product_input_clear"><i class="fal fa-times-circle"></i></span>
                            <span class="input_icon">
                               <i class="far fa-search"></i>
                            </span>
@@ -1733,7 +1733,7 @@
                      <li>/</li>
                      <li><a href="#">Product Details</a></li>
                      <li>/</li>
-                     <li>U.S. Polo Assn.</li>
+                     <li>Smartwatch Youth Edition</li>
                   </ul>
                </div>
                <div class="product_info_count">
@@ -1748,11 +1748,11 @@
    <!-- start product details main area  -->
    <section id="product_details_main">
       <div class="container">
-         <div class="row">
-            <div class="col-xxl-6">
+         <div class="row align-items-center">
+            <div class="col-xxl-6 col-xl-6">
                <div class="product_image_area">
                   <div class="row">
-                     <div class="col-xxl-2">
+                     <div class="col-xxl-2 col-xl-3">
                         <div class="down_product_thumb_slide">
                            <div class="product_thumb_slide_item">
                               <img class="img-fluid" src="asset/img/product-image/1.jpg" alt="">
@@ -1771,7 +1771,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-xxl-10">
+                     <div class="col-xxl-10 col-xl-9">
                         <div class="main_product_slide">
                            <div class="main_product_item_slide">
                               <img class="img-fluid zoom_image" data-zoom="asset/img/product-image/1.jpg" src="asset/img/product-image/1.jpg" alt="">
@@ -1798,9 +1798,153 @@
                   </div>
                </div>
             </div>
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 col-xl-6">
                <div class="product_details_area">
-                  dedtails
+                  <div class="product_name_review">
+                     <h4>Smartwatch Youth Edition</h4>
+                     <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star-half-alt"></i></li>
+                        <li><span>74 Reviews</span></li>
+                     </ul>
+                  </div>
+                  <div class="price_tag">
+                     <h1>$18.<span>99</span></h1>
+                  </div>
+                  <div class="quantity_color">
+                     <div class="row">
+                        <div class="col-xxl-3">
+                           <div class="info">
+                              <p>Select Quantity</p>
+                           </div>
+                           <div class="quantity_input">
+                              <div class="sp-minus fff"> 
+                                <button class="quantity_action" type="button">-</button>
+                              </div>
+                              <div class="sp-input">
+                                  <input type="text" class="quntity-input" value="1" />
+                              </div>
+                              <div class="sp-plus fff">
+                                 <button class="quantity_action" type="button">+</button>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-xxl-8">
+                           <div class="info">
+                              <p>Availabe Color</p>
+                           </div>
+                           <div class="color_select_option">
+                              <div class="input_box">
+                                 <input type="radio" id="color1" name="color">
+                                 <label for="color1">
+                                    <span style="background-color: #f25540;"></span>
+                                 </label>
+                              </div>
+                              <div class="input_box">
+                                 <input type="radio" id="color2" name="color">
+                                 <label for="color2">
+                                    <span style="background-color: #65805b;"></span>
+                                 </label>
+                              </div>
+                              <div class="input_box">
+                                 <input type="radio" id="color3" name="color">
+                                 <label for="color3">
+                                    <span style="background-color: #ddd;"></span>
+                                 </label>
+                              </div>
+                              <div class="input_box">
+                                 <input type="radio" id="color4" name="color">
+                                 <label for="color4">
+                                    <span style="background-color: #333;"></span>
+                                 </label>
+                              </div>
+                              <div class="input_box">
+                                 <input type="radio" id="color5" name="color">
+                                 <label for="color5">
+                                    <span style="background-color: pink;"></span>
+                                 </label>
+                              </div>
+                              <div class="input_box">
+                                 <input type="radio" id="color6" name="color">
+                                 <label for="color6">
+                                    <span style="background-color: blue;"></span>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="size_selecttion">
+                     <div class="row align-items-end">
+                        <div class="col-xxl-4">
+                           <div class="info">
+                              <p>Select your size</p>
+                           </div>
+                           <div class="size_select_box">
+                              <select>
+                                 <option value="0" selected>M</option>
+                                 <option value="0">L</option>
+                                 <option value="0">S</option>
+                                 <option value="0">XX</option>
+                                 <option value="0">XL</option>
+                                 <option value="0">XXL</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-xxl-6">
+                           <div class="addto_cart_btn">
+                              <a href="#"><i class="fal fa-shopping-cart"></i> Add to Cart</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="another_action_btn">
+                     <div class="row">
+                        <div class="col-xxl-5">
+                           <a href="#"><i class="fal fa-heart"></i> Add to Wishlist</a>
+                        </div>
+                        <div class="col-xxl-5">
+                           <a href="#"><i class="fal fa-retweet"></i> Compare</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="shiping_option">
+                     <div class="top_heade">
+                        <h4><i class="fal fa-shipping-fast"></i> Shippig option</h4>
+                     </div>
+                     <div class="main_content">
+                        <div class="shiping_option_item">
+                           <div class="left_info">
+                              <p>Local courier shipping</p>
+                              <h5>2 - 4 days</h5>
+                           </div>
+                           <div class="right_price">
+                              <h6>$16.50</h6>
+                           </div>
+                        </div>
+                        <div class="shiping_option_item">
+                           <div class="left_info">
+                              <p>UPS ground shipping</p>
+                              <h5>4 - 6 days</h5>
+                           </div>
+                           <div class="right_price">
+                              <h6>$19.00</h6>
+                           </div>
+                        </div>
+                        <div class="shiping_option_item">
+                           <div class="left_info">
+                              <p>Local pickup from store</p>
+                              <h5>-</h5>
+                           </div>
+                           <div class="right_price">
+                              <h6>$0.00</h6>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
@@ -1808,8 +1952,487 @@
    </section>
    <!-- end product details main area  -->
 
+   <!-- start product details info tab area  -->
+   <section id="product_details_info_tab_area">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="tab_info_main_wrapper">
+                  <div class="product_tab_nav">
+                     <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#genaral_info" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fal fa-info-square"></i> General Info</button>
 
+                          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#specefication_tab" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fal fa-align-left"></i> Specefications</button>
+                          
+                          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#review_tab" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fal fa-stars"></i> Reviews (74)</button>
+                        </div>
+                      </nav>
+                  </div>
 
+                  <div class="product_tab_main_content">
+                     <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="genaral_info" role="tabpanel" aria-labelledby="nav-home-tab">
+                           <div class="row">
+                              <div class="col-xxl-9 mx-auto">
+                                 <div class="general_info_content">
+                                    <h3>Choose your style</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span class="italic">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span> commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                    <img class="img-fluid" src="asset/img/prod-img2.jpg" alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <span class="italic">in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="specefication_tab" role="tabpanel" aria-labelledby="nav-profile-tab">
+                           <div class="specefication_tab_content">
+                              <div class="top_product_image">
+                                 <div class="image_box">
+                                    <img class="img-fluid" src="asset/img/th05.jpg" alt="">
+                                 </div>
+                                 <div class="content_box">
+                                    <h4>Smartwatch Youth Edition</h4>
+                                    <h5>$124.99</h5>
+                                 </div>
+                              </div>
+                              <div class="speci_wrapper">
+                                 <div class="row">
+                                    <div class="col-xxl-6">
+                                       <div class="specefication_item">
+                                          <h4>General specs</h4>
+                                          <ul>
+                                             <li>Model: <span>Amazfit Smartwatch</span></li>
+                                             <li>Gender: <span>Unisex</span></li>
+                                             <li>Smartphone app: <span>Amazfit Watch</span></li>
+                                             <li>OS campitibility: <span>Android / iOS</span></li>
+                                          </ul>
+                                       </div>
+                                       <div class="specefication_item">
+                                          <h4>Physical specs</h4>
+                                          <ul>
+                                             <li>Shape: <span>Rectangular</span></li>
+                                             <li>Body material: <span>Plastics / Ceramics</span></li>
+                                             <li>Band material: <span>Silicone</span></li>
+                                          </ul>
+                                       </div>
+                                       <div class="specefication_item">
+                                          <h4>Display</h4>
+                                          <ul>
+                                             <li>Display type: <span>Color</span></li>
+                                             <li>Display size: <span>1.28"</span></li>
+                                             <li>Screen resolution: <span>176 x 176</span></li>
+                                             <li>Touch screen: <span>No</span></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="col-xxl-6">
+                                       <div class="specefication_item">
+                                          <h4>Functions</h4>
+                                          <ul>
+                                             <li>Phone calls: <span>Incoming call notification</span></li>
+                                             <li>Monitoring: <span>Heart rate / Physical activity</span></li>
+                                             <li>GPS support: <span>Yes</span></li>
+                                             <li>Sensors: <span>Heart rate, Gyroscope, Geomagnetic, Light sensor</span></li>
+                                          </ul>
+                                       </div>
+                                       <div class="specefication_item">
+                                          <h4>Battery</h4>
+                                          <ul>
+                                             <li>Battery: <span>Li-Pol</span></li>
+                                             <li>Battery capacity: <span>190 mAh</span></li>
+                                          </ul>
+                                       </div>
+                                       <div class="specefication_item">
+                                          <h4>Dimensions</h4>
+                                          <ul>
+                                             <li>Dimensions: <span>195 x 20 mm</span></li>
+                                             <li>Weight: <span>32 g</span></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="review_tab" role="tabpanel" aria-labelledby="nav-contact-tab">
+                           <div class="review_section_area">
+                              <div class="review_section_top">
+                                 <div class="image_box">
+                                    <div class="image_area">
+                                       <img class="img-fluid" src="asset/img/th05.jpg" alt="">
+                                    </div>
+                                    <div class="content_box">
+                                       <h4>Smartwatch Youth Edition</h4>
+                                       <h5>$124.99</h5>
+                                    </div>
+                                 </div>
+                                 <div class="review_summery">
+                                    <h4>74 Reviews</h4>
+                                    <ul>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fal fa-star"></i></li>
+                                       <li class="last">4.1 Overall rating</li>
+                                    </ul>
+                                    <p>58 out of 74 (77%)</p>
+                                    <p>Customers recommended this product</p>
+                                 </div>
+                              </div>
+                              <div class="feedback_main_wrapper">
+                                 <div class="row">
+                                    <div class="col-xxl-6">
+                                       <div class="review_box_wrapper">
+                                          <div class="review_item">
+                                             <div class="top_info">
+                                                <div class="user_info_box">
+                                                   <div class="user_image">
+                                                      <img class="img-fluid" src="asset/img/01.jpg" alt="">
+                                                   </div>
+                                                   <div class="user_content">
+                                                      <h5>Rafael Marquez</h5>
+                                                      <p>June 28, 2019</p>
+                                                   </div>
+                                                </div>
+                                                <div class="feedback_reting">
+                                                   <ul>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fal fa-star"></i></li>
+                                                   </ul>
+                                                   <p>83% of users found this review helpful</p>
+                                                </div>
+                                             </div>
+                                             <div class="review_text_bottom">
+                                                <img class="img-fluid" src="https://via.placeholder.com/500x100" alt="">
+                                                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est...</p>
+                                             </div>
+                                          </div>
+
+                                          <div class="review_item">
+                                             <div class="top_info">
+                                                <div class="user_info_box">
+                                                   <div class="user_image">
+                                                      <img class="img-fluid" src="asset/img/01.jpg" alt="">
+                                                   </div>
+                                                   <div class="user_content">
+                                                      <h5>Rafael Marquez</h5>
+                                                      <p>June 28, 2019</p>
+                                                   </div>
+                                                </div>
+                                                <div class="feedback_reting">
+                                                   <ul>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fal fa-star"></i></li>
+                                                   </ul>
+                                                   <p>83% of users found this review helpful</p>
+                                                </div>
+                                             </div>
+                                             <div class="review_text_bottom">
+                                                <img class="img-fluid" src="https://via.placeholder.com/500x100" alt="">
+                                                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est...</p>
+                                             </div>
+                                          </div>
+
+                                          <div class="review_item">
+                                             <div class="top_info">
+                                                <div class="user_info_box">
+                                                   <div class="user_image">
+                                                      <img class="img-fluid" src="asset/img/01.jpg" alt="">
+                                                   </div>
+                                                   <div class="user_content">
+                                                      <h5>Rafael Marquez</h5>
+                                                      <p>June 28, 2019</p>
+                                                   </div>
+                                                </div>
+                                                <div class="feedback_reting">
+                                                   <ul>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fa fa-star"></i></li>
+                                                      <li><i class="fal fa-star"></i></li>
+                                                   </ul>
+                                                   <p>83% of users found this review helpful</p>
+                                                </div>
+                                             </div>
+                                             <div class="review_text_bottom">
+                                                <img class="img-fluid" src="https://via.placeholder.com/500x100" alt="">
+                                                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est...</p>
+                                             </div>
+                                          </div>
+
+                                          <div class="load_more_review text-center">
+                                             <a href="#"><i class="far fa-redo-alt"></i> Load More</a>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <div class="col-xxl-6">
+                                       <div class="feedbak_form_box">
+
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end product details info tab area  -->
+
+   <!-- product info area bottom  -->
+   <section id="product_info_details_bottom">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="top_title">
+                  <h3>Product Information</h3>
+               </div>
+               <div class="product_information_content">
+                  <div class="image_box">
+                     <img class="img-fluid" src="https://via.placeholder.com/1920x300" alt="">
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <span class="color_line">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</span> cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis neque libero voluptatum error! Quis quisquam eum neque obcaecati, impedit architecto quibusdam perspiciatis commodi dolores quae quo eius deleniti doloribus?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, vel nisi delectus sit laudantium ab officiis eaque illum debitis corrupti consequuntur, reprehenderit magni minus esse <span class="color_line">et iste ad incidunt aliquid! Fugiat, eius? Tempore repudiandae dolorem obcaecati quas sapiente, aut vel officia maiores nesciunt harum</span> natus assumenda. Velit nisi vel quibusdam porro ipsum id neque facere nihil temporibus autem ab quasi aliquam voluptates quia iusto odio, nobis vero qui assumenda incidunt fuga. Magnam blanditiis quia sed provident quaerat. Recusandae quia animi, obcaecati vitae mollitia ducimus iure perspiciatis temporibus velit incidunt consectetur minus voluptatem quibusdam aspernatur nobis. Iure nisi voluptate dolor tempore.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end product info area bottom  -->
+
+   <!-- start home page product section  -->
+   <section id="home_page_product">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xxl-11 col-lg-12 mx-auto">
+               <div class="product_top_title text-center">
+                  <h3>Related Products</h3>
+               </div>
+               <div class="home_product_slider_active owl-carousel">
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="product_slider_item">
+                     <div class="product_image">
+                        <a href="#">
+                           <img src="https://via.placeholder.com/230x230" alt="">
+                        </a>
+                     </div>
+                     <div class="product_info">
+                        <a href="#">Somersung Sonic X500 Basic Product Tile Goes Here</a>
+                        <h4>$199.99</h4>
+                        <ul>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                           <li><i class="fa fa-star"></i></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end home page product section  -->
 
    <!-- start footer area  -->
    <footer id="footer_area">
@@ -1908,9 +2531,10 @@
    </footer>
    <!-- end footer area  -->
 
+
    <!-- all javascript load here -->
    <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
-   <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+   <script src="asset/js/bootstrap.bundle.min.js"></script>
    <script src="asset/js/plugin/owl.carousel.min.js"></script>
    <script src="asset/js/plugin/icheck.min.js"></script>
    <script src="asset/js/plugin/jquery.nice-select.min.js"></script>

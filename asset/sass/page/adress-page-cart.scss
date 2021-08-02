@@ -1,0 +1,110 @@
+.address_form_area{
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    .form_title{
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .input_box{
+        input{
+            padding: 10px 20px;
+            font-weight: 500;
+            font-size: 14px;
+            height: calc(48px + 2px);
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        label{
+            left: 20px;
+            display: flex;
+            align-items: center;
+            height: 100% !important;
+            padding: 0px !important;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        .info_error{
+            margin-top: -10px;
+            font-size: 11px;
+            color: #ff3f6c;
+            font-weight: 500;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+            opacity: 1;
+            background-color: #fff;
+            height: auto !important;
+            padding: 0px 10px !important;
+            left: 15px !important;
+            color: rgba(51, 51, 51, 0.733);
+        }
+        .form-floating>.form-control.is-invalid:focus~label, .form-floating>.form-control.is-invalid:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+            color: #ff3f6c !important;
+        }
+        .form-floating>.form-control.is-valid:focus~label, .form-floating>.form-control.is-valid:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+            color: green !important;
+        }
+        .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+            padding-top: 15px;
+        }
+    }
+    .adress_input_form_area{
+        margin-top: 30px;
+    }
+    .save_this_address{
+        ul{
+            li{
+                display: inline-block;
+                border: 1px solid #ddd;
+                width: 70px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 13px;
+                margin-right: 5px;
+                border-radius: 30px;
+                padding: 7px 0px;
+                cursor: pointer;
+            }
+            .active{
+                color: #ff3f6c;
+                border-color: #ff3f6c;
+            }
+        }
+    }
+    .mark_defaul_address{
+        margin-top: 20px;
+        li{
+            list-style: none;
+            label{
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 13px;
+                margin-left: 4px;
+            }
+        }
+    }
+    .add_address_action_form{
+        border-top: 1px solid #ddd;
+        margin-top: 30px;
+        padding-top: 20px;
+        button{
+            display: block;
+            width: 100%;
+            background-color: #ff3f6c;
+            color: #fff;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 13px;
+            padding: 15px 0px;
+            border-radius: 4px;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}

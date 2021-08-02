@@ -15,7 +15,6 @@
    <link rel="stylesheet" href="asset/css/plugin/skins/all.css">
    <link rel="stylesheet" href="asset/css/plugin/nice-select.css">
    <link rel="stylesheet" href="asset/css/style.css">
-   <link rel="stylesheet" href="asset/css/responsive.css">
    <!-- this is for mordanizar js link -->
    <script src="asset/js/vendor/modernizr-3.6.0.min.js"></script>
 </head>
@@ -699,7 +698,8 @@
                   <div class="search_box">
                      <form action="#">
                         <div class="input_box">
-                           <input type="text" placeholder="Search for products, brands and more">
+                           <input id="main_product_search" type="text" placeholder="Search for products, brands and more">
+                           <span class="main_product_input_clear"><i class="fal fa-times-circle"></i></span>
                            <span class="input_icon">
                               <i class="far fa-search"></i>
                            </span>
@@ -1820,10 +1820,298 @@
                            <input type="checkbox" id="flipflops" name="flipflops">
                            <label for="flipflops">Flip Flops <span>(192)</span></label>
                         </li>
-                        <li>
-                           <a href="#">+ 28 more</a>
-                        </li>
                      </ul>
+                     <div class="popup_filter_categories">
+                        <div class="top_area_title">
+                           <div class="search_box">
+                              <form action="#">
+                                 <input type="text" placeholder="Search Categories">
+                              </form>
+                           </div>
+                           <div class="close_popup">
+                              <i class="fal fa-times"></i>
+                           </div>
+                        </div>
+                        <div class="categories_item_main_box">
+                           <div class="main_item">
+                              <h4>B</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="Briefs" name="Briefs">
+                                    <label for="Briefs">Briefs <span>(1323)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Boxers" name="Boxers">
+                                    <label for="Boxers">Boxers <span>(911)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Blazers" name="Blazers">
+                                    <label for="Blazers">Blazers <span>(597)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Belts" name="Belts">
+                                    <label for="Belts">Belts <span>(350)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Backpack" name="Backpack">
+                                    <label for="Backpack">Backpack <span>(274)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>C</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="cshoes" name="cshoes">
+                                    <label for="cshoes">Casual Shoes <span>(1323)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Clothing" name="Clothing">
+                                    <label for="Clothing">Clothing Set <span>(911)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Caps" name="Caps">
+                                    <label for="Caps">Caps <span>(597)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Coats" name="Coats">
+                                    <label for="Coats">Coats <span>(350)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Clutches" name="Clutches">
+                                    <label for="Clutches">Clutches <span>(274)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Capris" name="Capris">
+                                    <label for="Capris">Capris <span>(274)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Camisoles" name="Camisoles">
+                                    <label for="Camisoles">Camisoles <span>(274)</span></label>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="main_item">
+                              <h4>D</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="Dress" name="Dress">
+                                    <label for="Dress">Dress <span>(1323)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>F</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="flip_flops" name="flip_flops">
+                                    <label for="flip_flops">Flip Flops <span>(1323)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="formal_cloth" name="formal_cloth">
+                                    <label for="formal_cloth">Formal Shoes <span>(911)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>H</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="hand_bag" name="hand_bag">
+                                    <label for="hand_bag">Hand Bag <span>(1323)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>I</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="innerware_vest" name="innerware_vest">
+                                    <label for="innerware_vest">Innerwear Vests <span>(1323)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>J</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="Jeans1" name="Jeans2">
+                                    <label for="Jeans1">Jeans <span>(1323)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Jackets1" name="Jackets1">
+                                    <label for="Jackets1">Jackets <span>(1323)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Jeggings1" name="Jeggings1">
+                                    <label for="Jeggings1">Jeggings <span>(1323)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Jumpsuit1" name="Jumpsuit1">
+                                    <label for="Jumpsuit1">Jumpsuit <span>(1323)</span></label>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="main_item">
+                              <h4>L</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="ltshirts" name="ltshirts">
+                                    <label for="ltshirts">Lounge Tshirts <span>(1323)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="lpants" name="lpants">
+                                    <label for="lpants">Lounge Pants <span>(1323)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="lshorts" name="lshorts">
+                                    <label for="lshorts">Lounge Shorts <span>(1323)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Leggings1" name="Leggings1">
+                                    <label for="Leggings1">Leggings <span>(1323)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="laptop_bag" name="laptop_bag">
+                                    <label for="laptop_bag">Laptop Bag <span>(1323)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>M</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="messanger_bag" name="messanger_bag">
+                                    <label for="messanger_bag">Messenger Bag <span>(1)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>N</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="nehrus_jackets" name="nehrus_jackets">
+                                    <label for="nehrus_jackets">Nehru Jackets <span>(5)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>o</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="outdoor_mask" name="outdoor_mask">
+                                    <label for="outdoor_mask">Outdoor Masks <span>(0)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>p</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="palazoos1" name="palazoos1">
+                                    <label for="palazoos1">Palazoos <span>(1)</span></label>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="main_item">
+                              <h4>R</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="Rompers1" name="Rompers1">
+                                    <label for="Rompers1">Rompers <span>(4)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>s</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="shirts1" name="shirts1">
+                                    <label for="shirts1">Shirts <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Sweatshirts1" name="Sweatshirts1">
+                                    <label for="Sweatshirts1">Sweatshirts <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Sweaters1" name="Sweaters1">
+                                    <label for="Sweaters1">Sweaters <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Shorts1" name="Shorts1">
+                                    <label for="Shorts1">Shorts <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="sport_shoes_1" name="sport_shoes_1">
+                                    <label for="sport_shoes_1">Sports Shoes <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="Sandals1" name="Sandals1">
+                                    <label for="Sandals1">Sandals <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="sport_sandle" name="sport_sandle">
+                                    <label for="sport_sandle">Sports Sandals <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="socks1" name="socks1">
+                                    <label for="socks1">Socks <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="skirts1" name="skirts1">
+                                    <label for="skirts1">Skirts <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="shurge_1" name="shurge_1">
+                                    <label for="shurge_1">Shrug <span>(4)</span></label>
+                                 </li>
+                              </ul>
+                              <h4>w</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="check31" name="check31">
+                                    <label for="check31">Watches <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check32" name="check32">
+                                    <label for="check32">Wallets <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check33" name="check33">
+                                    <label for="check33">Waistcoat <span>(4)</span></label>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="main_item">
+                              <h4>t</h4>
+                              <ul>
+                                 <li>
+                                    <input type="checkbox" id="check11" name="check11">
+                                    <label for="check11">Tshirts <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check12" name="check12">
+                                    <label for="check12">Trousers <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check13" name="check13">
+                                    <label for="check13">Tops <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check14" name="check14">
+                                    <label for="check14">Track Pants <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check15" name="check15">
+                                    <label for="check15">Trunk <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check16" name="check16">
+                                    <label for="check16">Thermal Tops <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check17" name="check17">
+                                    <label for="check17">Thermal Bottoms <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check18" name="check18">
+                                    <label for="check18">Trolley Bag <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check19" name="check19">
+                                    <label for="check19">Tights <span>(4)</span></label>
+                                 </li>
+                                 <li>
+                                    <input type="checkbox" id="check20" name="check20">
+                                    <label for="check20">Tunics <span>(4)</span></label>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <li>
+                        <a id="category_dektop_more" class="cat_desk_btn" href="#">+ 28 more</a>
+                     </li>
                   </div>
                   <div class="categories_filter">
                      <h4>Brand</h4>
@@ -1861,39 +2149,99 @@
                   </div>
                   <div class="categories_filter">
                      <h4>COLOR</h4>
-                     <ul>
+                     <ul class="color_filter_ul">
                         <li>
-                           <input type="checkbox" id="shirts" name="thirts">
-                           <label for="shirts"><span class="color_dot" style="background-color: blue;"></span> Blue <span>(1323)</span></label>
+                           <input type="checkbox" id="blue" name="blue">
+                           <label for="blue"><span class="color_dot" style="background-color: blue;"></span> Blue <span>(1323)</span></label>
                         </li>
                         <li>
-                           <input type="checkbox" id="tshirts" name="tshirts">
-                           <label for="tshirts"><span class="color_dot" style="background-color: navy;"></span> Navy Blue <span>(911)</span></label>
+                           <input type="checkbox" id="navblue" name="navblue">
+                           <label for="navblue"><span class="color_dot" style="background-color: navy;"></span> Navy Blue <span>(911)</span></label>
                         </li>
                         <li>
-                           <input type="checkbox" id="casual-shoes" name="casual-shoes">
-                           <label for="casual-shoes"><span class="color_dot" style="background-color: black;"></span> Black <span>(597)</span></label>
+                           <input type="checkbox" id="black" name="black">
+                           <label for="black"><span class="color_dot" style="background-color: black;"></span> Black <span>(597)</span></label>
                         </li>
                         <li>
-                           <input type="checkbox" id="jens" name="jens">
-                           <label for="jens"><span class="color_dot" style="background-color: white;"></span> White <span>(350)</span></label>
+                           <input type="checkbox" id="white" name="white">
+                           <label for="white"><span class="color_dot" style="background-color: white;"></span> White <span>(350)</span></label>
                         </li>
                         <li>
-                           <input type="checkbox" id="trouser" name="trouser">
-                           <label for="trouser"><span class="color_dot" style="background-color: gray;"></span> Grey <span>(274)</span></label>
+                           <input type="checkbox" id="grey" name="grey">
+                           <label for="grey"><span class="color_dot" style="background-color: gray;"></span> Grey <span>(274)</span></label>
                         </li>
                         <li>
-                           <input type="checkbox" id="jacket" name="jacket">
-                           <label for="jacket"><span class="color_dot" style="background-color: red;"></span> Red <span>(274)</span></label>
+                           <input type="checkbox" id="red" name="red">
+                           <label for="red"><span class="color_dot" style="background-color: red;"></span> Red <span>(274)</span></label>
                         </li>
                         <li>
-                           <input type="checkbox" id="sweatshirts" name="sweatshirts">
-                           <label for="sweatshirts"><span class="color_dot" style="background-color: green;"></span> Green <span>(248)</span></label>
+                           <input type="checkbox" id="green" name="green">
+                           <label for="green"><span class="color_dot" style="background-color: green;"></span> Green <span>(248)</span></label>
                         </li>
                         <li>
-                           <a href="#">+ 30 more</a>
+                           <input type="checkbox" id="offwhite" name="offwhite">
+                           <label for="offwhite"><span class="color_dot" style="background-color: #F2F2F2;"></span> Off White <span>(207)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="olive" name="olive">
+                           <label for="olive"><span class="color_dot" style="background-color: #3D9970;"></span> Olive <span>(19)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="pink" name="pink">
+                           <label for="pink"><span class="color_dot" style="background-color: #3D9970;"></span> Pink <span>(177)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="brown" name="brown">
+                           <label for="brown"><span class="color_dot" style="background-color: #915039;"></span> Brown <span>(173)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="orange" name="orange">
+                           <label for="orange"><span class="color_dot" style="background-color: #F28D20;"></span> Orange <span>(142)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="beige" name="beige">
+                           <label for="beige"><span class="color_dot" style="background-color: #E8E6CF;"></span> Beige <span>(139)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="maroon" name="maroon">
+                           <label for="maroon"><span class="color_dot" style="background-color: #B03060;"></span> Maroon <span>(119)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="carcoal" name="carcoal">
+                           <label for="carcoal"><span class="color_dot" style="background-color: #36454F;"></span> Charcoal <span>(110)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="tan" name="tan">
+                           <label for="tan"><span class="color_dot" style="background-color: #D2B48C;"></span> Tan <span>(85)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="gerymelange" name="gerymelange">
+                           <label for="gerymelange"><span class="color_dot" style="background-color: #9FA8AB;"></span> Grey Melange <span>(84)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="mustard" name="mustard">
+                           <label for="mustard"><span class="color_dot" style="background-color: #CC9C33;"></span> Mustard <span>(84)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="khaki" name="khaki">
+                           <label for="khaki"><span class="color_dot" style="background-color: #C3B091;"></span> Khaki <span>(84)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="coral" name="coral">
+                           <label for="coral"><span class="color_dot" style="background-color: #FF7F50;"></span> Coral <span>(84)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="coral" name="peach">
+                           <label for="peach"><span class="color_dot" style="background-color: #FFE5B4;"></span> Peach <span>(84)</span></label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="coral" name="rust">
+                           <label for="rust"><span class="color_dot" style="background-color: #B7410E;"></span> Rust <span>(84)</span></label>
                         </li>
                      </ul>
+                     <li>
+                        <a id="show_more_color" href="#">+ 30 more</a>
+                     </li>
                   </div>
                   <div class="category_filter">
                      <h4>DISCOUNT RANGE</h4>
@@ -2468,8 +2816,6 @@
    </div> 
    <!-- end mobile filter area  -->
 
-
-
    <div class="offcanvas offcanvas-bottom mobile_sortby_main" tabindex="-1" id="mobile_shortby" aria-labelledby="offcanvasBottomLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasBottomLabel">Sort By</h5>
@@ -2792,11 +3138,6 @@
        </div>
     </div>
 
-
-
-
-
-
    <!-- start footer area  -->
    <footer id="footer_area">
       <div class="container">
@@ -2895,26 +3236,6 @@
    </footer>
    <!-- end footer area  -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <div class="fake"></div>
    <!-- all javascript load here -->
    <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
    <script src="asset/js/bootstrap.bundle.min.js"></script>
@@ -2924,11 +3245,38 @@
    <script src="asset/js/custom.js"></script>
    <script>
       $(document).ready(function(){
-      $('.category_filter input,.categories_filter input').iCheck({
-         checkboxClass: 'icheckbox_square-red',
-         radioClass: 'iradio_flat-red',
-         increaseArea: '20%' // optional
-      });
+         $('.category_filter input,.categories_filter input').iCheck({
+            checkboxClass: 'icheckbox_square-red',
+            radioClass: 'iradio_flat-red',
+            increaseArea: '20%' // optional
+         });
+         $('#show_more_color').on('click',function(e){
+           $('.color_filter_ul').addClass('full_expend');
+           $(this).hide();
+            e.preventDefault();
+         })
+
+
+         $('#category_dektop_more').on('click',function(e){
+           $('.popup_filter_categories').addClass('full_expend');
+            e.preventDefault();
+         })
+
+         $('.close_popup').on('click',function(){
+           $('.popup_filter_categories').removeClass('full_expend');
+         })
+
+         $(document).click(function (e) {
+            if (!$(e.target).hasClass("cat_desk_btn") 
+               && $(e.target).parents(".popup_filter_categories").length === 0) 
+            {
+               $(".popup_filter_categories").removeClass('full_expend');
+            }
+         });
+
+
+
+         
       });
    </script>
 </body>

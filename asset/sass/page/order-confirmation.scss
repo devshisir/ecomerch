@@ -1,0 +1,73 @@
+#order_confirmation{
+    padding: 100px 0px;
+    background: #fff;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    .content_box{
+        h1{
+            font-weight: 700;
+            font-size: 50px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .sub_conten_box{
+            margin-top: 50px;
+            .icon_box{
+                height: 70px;
+                width: 70px;
+                background: #d6eafa;
+                margin: 0 auto;
+                display: table;
+                border-radius: 50%;
+                line-height: 70px;
+                font-size: 30px;
+                color: #3E99E7;
+            }
+            h4{
+                margin-top: 15px;
+                font-weight: 500;
+                font-size: 17px;
+            }
+            p{
+                font-size: 15px;
+                margin-top: 5px;
+            }
+            a{
+                display: inline-block;
+                margin-top: 40px;
+                background-color: #282c3f;
+                color: #fff;
+                padding: 14px 60px;
+                border-radius: 4px;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    #order_confirmation .content_box h1{
+        font-size: 40px;
+    }
+    #order_confirmation{
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 575px) {
+    #order_confirmation .content_box h1{
+        font-size: 30px;
+    }
+    #order_confirmation{
+        min-height: 500px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #order_confirmation .content_box .sub_conten_box h4{
+        line-height: 25px;
+    }
+}

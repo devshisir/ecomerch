@@ -164,5 +164,50 @@ $('.country_content_mobile li').on('click',function(){
 })
 
 
+//product search area 
+$('#main_product_search').keyup(function(e){
+    if(this.value <= 1){
+        $('.main_product_input_clear').css("display","none");
+    }else{
+        $('.main_product_input_clear').css("display","flex");
+    }
+})
+
+//promotion_banar_close
+$('.promotion_banar_close').on('click',function(){
+    $('#promotional_banar').css('display','none');
+})
+
+
+
+
+
+
+
+
+
+
+// quantity plus minus 
+$(".quantity_action").on("click", function () {
+
+    var $button = $(this);
+    var oldValue = $button.closest('.quantity_input').find("input.quntity-input").val();
+
+    if ($button.text() == "+") {
+        var newVal = parseFloat(oldValue) + 1;
+    } else {
+        // Don't allow decrementing below zero
+        if (oldValue > 1) {
+            var newVal = parseFloat(oldValue) - 1;
+        } else {
+            newVal = 1;
+        }
+    }
+
+    $button.closest('.quantity_input').find("input.quntity-input").val(newVal);
+
+});
+
+
     
 });
