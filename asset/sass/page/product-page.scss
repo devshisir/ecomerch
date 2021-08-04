@@ -925,4 +925,17 @@
    #mobile_filter_area{
       display: block;
    }
+   #product_page_main_wrapper{
+      padding-left: 12px;
+      .product_main_container{
+         .col-6{
+            padding-left: 0px;
+            padding-right: 0px;
+         }
+         .single_product_item{
+           margin: 0px 3px;
+           margin-bottom: 10px;
+         }
+      }
+   }
 }

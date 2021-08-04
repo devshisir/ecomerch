@@ -914,6 +914,19 @@ main code start here
   .pagination_area .pagination_number_dot ul .active a:hover {
     background-color: #fe696a; }
 
+.mobile_left_right_pagination {
+  display: none !important;
+  margin-top: 15px; }
+
+@media (max-width: 575px) {
+  .hide_mobile {
+    display: none !important; }
+  .mobile_left_right_pagination {
+    display: block !important; }
+  .pagination_area .pagination_number_dot ul li {
+    margin-right: 0px;
+    margin: 0px 5px; } }
+
 #product_page_main_wrapper {
   padding: 15px 0px;
   padding-bottom: 0px;
@@ -1585,7 +1598,15 @@ main code start here
   .product_page_pagination .pagination_content ul li {
     margin-right: -3px; }
   #mobile_filter_area {
-    display: block; } }
+    display: block; }
+  #product_page_main_wrapper {
+    padding-left: 12px; }
+    #product_page_main_wrapper .product_main_container .col-6 {
+      padding-left: 0px;
+      padding-right: 0px; }
+    #product_page_main_wrapper .product_main_container .single_product_item {
+      margin: 0px 3px;
+      margin-bottom: 10px; } }
 
 #product_details_main {
   padding: 50px 0px;
@@ -3314,7 +3335,8 @@ main code start here
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .profile_page_main_content {
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding: 0px; }
   #profile_page_main {
     padding-bottom: 50px; }
   .profile_page_main_content .orders_table_content .table-responsive {
@@ -3330,12 +3352,7 @@ main code start here
   .profile_page_main_content .orders_table_content .table-responsive {
     overflow-x: scroll; }
   .profile_page_main_content .orders_table_content table {
-    width: 700px; }
-  .pagination_area .right_pagination {
-    text-align: left !important; }
-  .pagination_area .pagination_number_dot {
-    text-align: left !important;
-    margin: 10px 0px; } }
+    width: 700px; } }
 
 .wishlist_profile_wrapper .top_title {
   padding-bottom: 20px;
@@ -3487,7 +3504,9 @@ main code start here
   .order_history_table_area .orders_history_main_table {
     overflow-x: scroll; }
   .order_history_table_area .orders_history_main_table table {
-    width: 600px; } }
+    width: 600px; }
+  .profile_page_main_content {
+    padding: 0px 10px; } }
 
 /* XL (laptop) Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {

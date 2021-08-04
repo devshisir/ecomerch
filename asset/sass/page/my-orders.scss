@@ -190,6 +190,7 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .profile_page_main_content{
         margin-top: 30px;
+        padding: 0px;
     }
     #profile_page_main{
         padding-bottom: 50px;
@@ -217,12 +218,5 @@
     }
     .profile_page_main_content .orders_table_content table{
         width: 700px;
-    }
-    .pagination_area .right_pagination{
-        text-align: left !important;
-    }
-    .pagination_area .pagination_number_dot{
-        text-align: left !important;
-        margin: 10px 0px;
     }
 }
