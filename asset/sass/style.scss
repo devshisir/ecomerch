@@ -20,6 +20,9 @@
 .pst{
    position: static;
 }
+.bg-success{
+   background-color: #42d697 !important;
+}
 .product_info_count{
    margin-top: 10px;
    h4{
@@ -728,6 +731,9 @@ main code start here
 // this is for bread come area 
 @import 'component/breadcome.scss';
 
+// this is for pagination area 
+@import 'component/pagination.scss';
+
 // this is for product page 
 @import 'page/product-page.scss';
 
@@ -745,6 +751,15 @@ main code start here
 
 // payment method page
 @import 'page/payment-method-page.scss';
+
+// profile my orders page
+@import 'page/my-orders.scss';
+
+// profile wishlist page
+@import 'page/wishlist.scss';
+
+// profile wishlist page
+@import 'page/old-orders.scss';
 
 // all the bottom include responsive.scss file
 @import 'import/responsive.scss'

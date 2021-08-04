@@ -10,6 +10,7 @@
         width: 250px;
         background-color: #FFF1EC;
         height: 100%;
+        min-height: 700px;
         .nav-link{
             text-align: left !important;
             display: flex;
@@ -35,14 +36,12 @@
 }
 
 .inside_content_flex{
-    height: 100%;
-    display: flex;
-    align-items: center;
     .main_content{
         width: 100%;
         padding-right: 20px;
     }
 }
+
 
 .place_order_btn{
     margin-top: 30px;
@@ -169,5 +168,206 @@
                 color: #ff3f6c;
             }
         }
+    }
+}
+
+
+.google_other_pay_content{
+    padding: 30px 0px;
+    h4{
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+.other_pay_collaspe_option{
+    margin-top: 30px;
+    padding: 0px 30px;
+    .accordion-item{
+        border: none;
+        background-color: transparent;
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    .accordion-button{
+        padding: 0px;
+        outline: none;
+        font-weight: 500;
+        font-size: 13px;
+        img{
+            margin-right: 8px;
+            min-width: 50px !important;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .accordion-button::after{
+        opacity: 0.8;
+        transform: scale(0.8);
+    }
+    .accordion-button:not(.collapsed)::after{
+        transform: scale(0.8) rotate(-180deg);
+    }
+    .accordion-button:not(.collapsed){
+        color: $mainColor;
+        background-color: transparent;
+        box-shadow: none;
+        font-weight: 700;
+    }
+    .pay_now_btn{
+        display: block;
+        width: 100%;
+        background-color: $mainColor;
+        color: #fff;
+        border: none;
+        text-align: center;
+        padding: 10px 0px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    .input_box{
+        margin-bottom: 15px;
+        input{
+            padding: 10px 20px;
+            font-weight: 500;
+            font-size: 14px;
+            height: calc(48px + 3px);
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        label{
+            left: 20px;
+            display: flex;
+            align-items: center;
+            height: 100% !important;
+            padding: 0px !important;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        .info_error{
+            margin-top: -10px;
+            font-size: 11px;
+            color: #ff3f6c;
+            font-weight: 500;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+            opacity: 1;
+            background-color: #fff;
+            height: auto !important;
+            padding: 0px 10px !important;
+            left: 15px !important;
+            color: rgba(51, 51, 51, 0.733);
+        }
+        .form-floating>.form-control.is-invalid:focus~label, .form-floating>.form-control.is-invalid:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+            color: #ff3f6c !important;
+        }
+        .form-floating>.form-control.is-valid:focus~label, .form-floating>.form-control.is-valid:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+            color: green !important;
+        }
+        .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+            padding-top: 15px;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .payment_method_page_wrapper .nav{
+        width: 100%;
+        min-height: auto !important;
+        height: auto !important;
+    }
+    .payment_method_page_wrapper .nav .nav-link{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .payment_method_page_wrapper .nav .nav-link i{
+        margin-bottom: 10px;
+    }
+    .payment_method_page_wrapper> .d-flex{
+        display: inline-block !important;
+        width: 100%;
+    }
+    .cash_on_delivery_content{
+        padding: 30px 50px;
+    }
+    .credit_debit_cart_content{
+        padding: 30px 50px;
+    }
+    .google_other_pay_content{
+        padding: 30px 50px;
+    }
+    .inside_content_flex .main_content{
+        padding-right: 0px;
+    }
+    .other_pay_collaspe_option{
+        padding: 0px;
+    }
+}
+
+@media (max-width: 575px) {
+    .payment_method_page_wrapper .nav{
+        width: 100%;
+        min-height: auto !important;
+        height: auto !important;
+    }
+    .payment_method_page_wrapper .nav .nav-link{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .payment_method_page_wrapper .nav .nav-link i{
+        margin-bottom: 10px;
+    }
+    .payment_method_page_wrapper> .d-flex{
+        display: inline-block !important;
+        width: 100%;
+    }
+    .cash_on_delivery_content{
+        padding: 30px 20px;
+    }
+    .credit_debit_cart_content{
+        padding: 30px 20px;
+    }
+    .google_other_pay_content{
+        padding: 30px 20px;
+    }
+    .inside_content_flex .main_content{
+        padding-right: 0px;
+    }
+    .other_pay_collaspe_option{
+        padding: 0px;
+    }
+    .credit_debit_cart_content .card-wrapper{
+        margin: 0px;
+    }
+    .credit_debit_cart_content #card_form{
+        margin-top: 0px;
+    }
+    .credit_debit_cart_content h4{
+        margin-bottom: 0px;
     }
 }

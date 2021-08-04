@@ -1776,7 +1776,7 @@
             <div class="col-xxl-11 mx-auto">
                <div class="main_cart_wrapper">
                   <div class="row">
-                     <div class="col-xxl-8 pr0">
+                     <div class="col-xxl-8 col-xl-8 col-lg-8 pr0">
                         <div class="left_pabel_cart">
                            <div class="payment_method_page_wrapper">
                               <div class="d-flex align-items-start" style="height: 100%;">
@@ -1795,23 +1795,23 @@
                                    </button>
 
 
-                                   <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                   <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#google_other_pay" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
                                        <i class="fal fa-credit-card-blank"></i>
                                        PHONEPE/GOOGLE PAY/BHIM UPI
                                    </button>
 
 
-                                   <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                   <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#payzapp_wallet_payment" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                        <i class="fal fa-wallet"></i>
                                        PAYTM/PAYZAPP/WALLETS
                                    </button>
 
-                                   <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                   <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#net_banking_payment" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                        <i class="fal fa-university"></i>
                                        NET BANKING
                                     </button>
 
-                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#emi_pay_payment" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                                        <i class="fal fa-money-check-alt"></i>
                                        EMI/PAYLATER
                                     </button>
@@ -1820,9 +1820,10 @@
                                  </div>
                                  <div class="tab-content" id="v-pills-tabContent">
 
-                                   <div class="tab-pane fade show active" id="cash_on_delivery" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                      <div class="cash_on_delivery_content inside_content_flex">
-                                         <div class="main_content">
+                                    <!-- cash on deleivery option -->
+                                    <div class="tab-pane fade show active" id="cash_on_delivery" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                       <div class="cash_on_delivery_content inside_content_flex">
+                                          <div class="main_content">
                                              <h4>Pay on delivery (Cash/Card/UPI)</h4>
                                              <div class="form_area">
                                                 <canvas id="canvas_captcha"></canvas>
@@ -1833,81 +1834,428 @@
                                              <div class="place_order_btn">
                                                 <a href="#" id="valid">Place Orders</a>
                                              </div>
-                                         </div>
-                                      </div>
-                                   </div>
-
-
-                                   <div class="tab-pane fade" id="credit_debit_cart_tab" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                       <div class="credit_debit_cart_content inside_content_flex">
-                                          <div class="main_content">
-                                             <h4>CREDIT/ DEBIT CARD </h4>
-                                             <div class="card-wrapper"></div>
-                                             <div class="form-container active">
-                                                <form id="card_form" action="">
-                                                   <div class="input_box">
-                                                      <div class="form-floating">
-                                                         <input type="text" class="form-control" name="number" id="floatingInput" placeholder="Enter Your card number">
-                                                         <label for="floatingInput">Card Number*</label>
-                                                         <!-- you can put is-invalid or is-valid class for check error or success value  -->
-                                                       </div>
-                                                   </div>
-
-                                                   <div class="input_box">
-                                                      <div class="form-floating">
-                                                         <input type="text" class="form-control" name="name" id="floatingInput" placeholder="Enter Your card number">
-                                                         <label for="floatingInput">Name on card*</label>
-                                                         <!-- you can put is-invalid or is-valid class for check error or success value  -->
-                                                       </div>
-                                                   </div>
-
-                                                   <div class="row">
-                                                      <div class="col-xl-6">
-                                                         <div class="input_box">
-                                                            <div class="form-floating">
-                                                               <input type="text" class="form-control" name="expiry" id="floatingInput" placeholder="Enter Your card number">
-                                                               <label for="floatingInput">Valid Thru (MM/YY)</label>
-                                                               <!-- you can put is-invalid or is-valid class for check error or success value  -->
-                                                             </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="col-xl-6">
-                                                         <div class="input_box">
-                                                            <div class="form-floating">
-                                                               <input type="text" class="form-control" name="cvc" id="floatingInput" placeholder="Enter Your card number">
-                                                               <label for="floatingInput">CVV</label>
-                                                               <!-- you can put is-invalid or is-valid class for check error or success value  -->
-                                                             </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                   <div class="save_card_details">
-                                                      <li>
-                                                         <input type="checkbox" id="save_card_details" name="save_card_details">
-                                                         <label for="save_card_details">Save this card for faster payments</label>
-                                                      </li>
-                                                   </div>
-                                                   <div class="place_order_btn">
-                                                      <a href="#" id="valid">Pay Now</a>
-                                                   </div>
-                                                </form>
-                                              </div>
                                           </div>
                                        </div>
-                                   </div>
+                                    </div>
+
+                                    <!-- cedit payment option -->
+                                    <div class="tab-pane fade" id="credit_debit_cart_tab" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                          <div class="credit_debit_cart_content inside_content_flex">
+                                             <div class="main_content">
+                                                <h4>CREDIT/ DEBIT CARD </h4>
+                                                <div class="card-wrapper"></div>
+                                                <div class="form-container active">
+                                                   <form id="card_form" action="">
+                                                      <div class="input_box">
+                                                         <div class="form-floating">
+                                                            <input type="text" class="form-control" name="number" id="floatingInput" placeholder="Enter Your card number">
+                                                            <label for="floatingInput">Card Number*</label>
+                                                            <!-- you can put is-invalid or is-valid class for check error or success value  -->
+                                                         </div>
+                                                      </div>
+
+                                                      <div class="input_box">
+                                                         <div class="form-floating">
+                                                            <input type="text" class="form-control" name="name" id="floatingInput" placeholder="Enter Your card number">
+                                                            <label for="floatingInput">Name on card*</label>
+                                                            <!-- you can put is-invalid or is-valid class for check error or success value  -->
+                                                         </div>
+                                                      </div>
+
+                                                      <div class="row">
+                                                         <div class="col-xl-6">
+                                                            <div class="input_box">
+                                                               <div class="form-floating">
+                                                                  <input type="text" class="form-control" name="expiry" id="floatingInput" placeholder="Enter Your card number">
+                                                                  <label for="floatingInput">Valid Thru (MM/YY)</label>
+                                                                  <!-- you can put is-invalid or is-valid class for check error or success value  -->
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-xl-6">
+                                                            <div class="input_box">
+                                                               <div class="form-floating">
+                                                                  <input type="text" class="form-control" name="cvc" id="floatingInput" placeholder="Enter Your card number">
+                                                                  <label for="floatingInput">CVV</label>
+                                                                  <!-- you can put is-invalid or is-valid class for check error or success value  -->
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="save_card_details">
+                                                         <li>
+                                                            <input type="checkbox" id="save_card_details" name="save_card_details">
+                                                            <label for="save_card_details">Save this card for faster payments</label>
+                                                         </li>
+                                                      </div>
+                                                      <div class="place_order_btn">
+                                                         <a href="#" id="valid">Pay Now</a>
+                                                      </div>
+                                                   </form>
+                                                </div>
+                                             </div>
+                                          </div>
+                                    </div>
+
+                                    <!-- phone google other payment -->
+                                    <div class="tab-pane fade" id="google_other_pay" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                       <div class="google_other_pay_content inside_content_flex">
+                                          <div class="main_content">
+                                             <h4>Pay using UPI </h4>
+                                             <div class="other_pay_collaspe_option">
+                                                <div class="accordion" id="other_pay_acordion1">
+
+                                                   <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_1" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/phonepay.png" alt="">
+                                                         PhonePe
+                                                        </button>
+                                                      </h2>
+                                                      <div id="other_pay_1" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion1">
+                                                         <div class="accordion-body">
+                                                            <a class="pay_now_btn" href="#">Pay Now</a>
+                                                          </div>
+                                                      </div>
+                                                    </div>
 
 
-                                   <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                                                   <div class="accordion-item">
+                                                     <h2 class="accordion-header" id="headingTwo">
+                                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_2" aria-expanded="false" aria-controls="collapseTwo">
+                                                         <img src="asset/img/pay/googlepay.png" alt="">
+                                                         Google Pay
+                                                       </button>
+                                                     </h2>
+                                                     <div id="other_pay_2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#other_pay_acordion1">
+                                                      <div class="accordion-body">
+                                                         <div class="input_box">
+                                                            <div class="form-floating">
+                                                               <input type="text" class="form-control" name="upiid1" id="floatingInput" placeholder="Enter UPI ID here">
+                                                               <label for="floatingInput">Enter UPI ID here</label>
+                                                               <!-- you can put is-invalid or is-valid class for check error or success value  -->
+                                                            </div>
+                                                         </div>
+                                                         <a class="pay_now_btn" href="#">Pay Now</a>
+                                                       </div>
+                                                     </div>
+                                                   </div>
 
 
-                                   <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                                                   <div class="accordion-item">
+                                                     <h2 class="accordion-header" id="headingThree">
+                                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_3" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/upipay.png" alt="">
+                                                         Enter UPI ID
+                                                       </button>
+                                                     </h2>
+                                                     <div id="other_pay_3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion1">
+                                                      <div class="accordion-body">
+                                                         <div class="input_box">
+                                                            <div class="form-floating">
+                                                               <input type="text" class="form-control" name="upiid2" id="floatingInput" placeholder="Enter UPI ID here">
+                                                               <label for="floatingInput">Enter UPI ID here</label>
+                                                               <!-- you can put is-invalid or is-valid class for check error or success value  -->
+                                                            </div>
+                                                         </div>
+                                                         <a class="pay_now_btn" href="#">Pay Now</a>
+                                                       </div>
+                                                     </div>
+                                                   </div>
+
+
+                                                 </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <!-- payment payzapp wallets payment -->
+                                    <div class="tab-pane fade" id="payzapp_wallet_payment" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                       <div class="google_other_pay_content inside_content_flex">
+                                          <div class="main_content">
+                                             <h4>Select wallet to pay </h4>
+                                             <div class="other_pay_collaspe_option">
+                                                <div class="accordion" id="other_pay_acordion2">
+
+                                                   <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_4" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/paytm.png" alt="">
+                                                         Paytm
+                                                      </button>
+                                                      </h2>
+                                                      <div id="other_pay_4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion2">
+                                                         <div class="accordion-body">
+                                                            <a class="pay_now_btn" href="#">Pay Now</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+
+
+                                                   <div class="accordion-item">
+                                                   <h2 class="accordion-header" id="headingTwo">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_5" aria-expanded="false" aria-controls="collapseTwo">
+                                                         <img src="asset/img/pay/payzapp.png" alt="">
+                                                         PayZapp
+                                                      </button>
+                                                   </h2>
+                                                   <div id="other_pay_5" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#other_pay_acordion2">
+                                                      <div class="accordion-body">
+                                                         <a class="pay_now_btn" href="#">Pay Now</a>
+                                                      </div>
+                                                   </div>
+                                                   </div>
+
+
+                                                   <div class="accordion-item">
+                                                   <h2 class="accordion-header" id="headingThree">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_6" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/mobilkwik.png" alt="">
+                                                         Mobikwik
+                                                      </button>
+                                                   </h2>
+                                                   <div id="other_pay_6" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion2">
+                                                      <div class="accordion-body">
+                                                         <a class="pay_now_btn" href="#">Pay Now</a>
+                                                      </div>
+                                                   </div>
+                                                   </div>
+
+                                                   <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_7" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/airtle-money.png" alt="">
+                                                         Airtel Money
+                                                      </button>
+                                                      </h2>
+                                                      <div id="other_pay_7" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion2">
+                                                      <div class="accordion-body">
+                                                         <a class="pay_now_btn" href="#">Pay Now</a>
+                                                      </div>
+                                                      </div>
+                                                   </div>
+
+                                                   <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_8" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/free-charge.png" alt="">
+                                                         FreeCharge
+                                                      </button>
+                                                      </h2>
+                                                      <div id="other_pay_8" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion2">
+                                                      <div class="accordion-body">
+                                                         <a class="pay_now_btn" href="#">Pay Now</a>
+                                                      </div>
+                                                      </div>
+                                                   </div>
+
+                                                   <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_9" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/ola-moeny.png" alt="">
+                                                         OlaMoney (Postpaid + Wallet)
+                                                      </button>
+                                                      </h2>
+                                                      <div id="other_pay_9" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion2">
+                                                      <div class="accordion-body">
+                                                         <a class="pay_now_btn" href="#">Pay Now</a>
+                                                      </div>
+                                                      </div>
+                                                   </div>
+
+
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+
+                                    <!-- phone google other payment -->
+                                    <div class="tab-pane fade" id="net_banking_payment" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                       <div class="google_other_pay_content inside_content_flex">
+                                          <div class="main_content">
+                                             <h4>Net Banking</h4>
+                                             <div class="other_pay_collaspe_option">
+                                                <div class="accordion" id="other_pay_acordion3">
+
+                                                   <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_10" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/axis-bank.png" alt="">
+                                                         Axis Bank
+                                                        </button>
+                                                      </h2>
+                                                      <div id="other_pay_10" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion3">
+                                                         <div class="accordion-body">
+                                                            <a class="pay_now_btn" href="#">Pay Now</a>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+
+
+                                                   <div class="accordion-item">
+                                                     <h2 class="accordion-header" id="headingTwo">
+                                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_11" aria-expanded="false" aria-controls="collapseTwo">
+                                                         <img src="asset/img/pay/hdfc-bank.png" alt="">
+                                                         HDFC Bank
+                                                       </button>
+                                                     </h2>
+                                                     <div id="other_pay_11" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#other_pay_acordion3">
+                                                      <div class="accordion-body">
+                                                         <a class="pay_now_btn" href="#">Pay Now</a>
+                                                       </div>
+                                                     </div>
+                                                   </div>
+
+
+                                                   <div class="accordion-item">
+                                                     <h2 class="accordion-header" id="headingThree">
+                                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_12" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/icici-bank.png" alt="">
+                                                         ICICI Bank
+                                                       </button>
+                                                     </h2>
+                                                     <div id="other_pay_12" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion3">
+                                                      <div class="accordion-body">
+                                                         <a class="pay_now_btn" href="#">Pay Now</a>
+                                                       </div>
+                                                     </div>
+                                                   </div>
+
+                                                   <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_13" aria-expanded="false" aria-controls="collapseThree">
+                                                          <img src="asset/img/pay/icici-bank.png" alt="">
+                                                          ICICI Bank
+                                                        </button>
+                                                      </h2>
+                                                      <div id="other_pay_13" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion3">
+                                                       <div class="accordion-body">
+                                                          <a class="pay_now_btn" href="#">Pay Now</a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_14" aria-expanded="false" aria-controls="collapseThree">
+                                                          <img src="asset/img/pay/kotak-bank.png" alt="">
+                                                          Kotak
+                                                        </button>
+                                                      </h2>
+                                                      <div id="other_pay_14" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion3">
+                                                       <div class="accordion-body">
+                                                          <a class="pay_now_btn" href="#">Pay Now</a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_15" aria-expanded="false" aria-controls="collapseThree">
+                                                          <img src="asset/img/pay/sbi-bank.png" alt="">
+                                                          SBI
+                                                        </button>
+                                                      </h2>
+                                                      <div id="other_pay_15" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion3">
+                                                       <div class="accordion-body">
+                                                          <a class="pay_now_btn" href="#">Pay Now</a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+
+                                                 </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <!-- phone google other payment -->
+                                    <div class="tab-pane fade" id="emi_pay_payment" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                       <div class="google_other_pay_content inside_content_flex">
+                                          <div class="main_content">
+                                             <h4>Select EMI Option </h4>
+                                             <div class="other_pay_collaspe_option">
+                                                <div class="accordion" id="other_pay_acordion4">
+
+                                                   <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_16" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/credit.png" alt="">
+                                                         Credit Card/HDFC Debit Card EMI
+                                                        </button>
+                                                      </h2>
+                                                      <div id="other_pay_16" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion4">
+                                                         <div class="accordion-body">
+                                                            <a class="pay_now_btn" href="#">Pay Now</a>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_17" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/zest-money.png" alt="">
+                                                         ZestMoney
+                                                        </button>
+                                                      </h2>
+                                                      <div id="other_pay_17" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion4">
+                                                         <div class="accordion-body">
+                                                            <a class="pay_now_btn" href="#">Pay Now</a>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_18" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/credit.png" alt="">
+                                                         Credits EMI
+                                                        </button>
+                                                      </h2>
+                                                      <div id="other_pay_18" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion4">
+                                                         <div class="accordion-body">
+                                                            <a class="pay_now_btn" href="#">Pay Now</a>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#other_pay_19" aria-expanded="false" aria-controls="collapseThree">
+                                                         <img src="asset/img/pay/flexipay.png" alt="">
+                                                         FlexiPay by HDFC Bank
+                                                        </button>
+                                                      </h2>
+                                                      <div id="other_pay_19" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#other_pay_acordion4">
+                                                         <div class="accordion-body">
+                                                            <a class="pay_now_btn" href="#">Pay Now</a>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+
+                                                 </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+
+
+
+
+
+
                                  </div>
                                </div>
                            </div>
                         </div>
                      </div>
    
-                     <div class="col-xxl-4 pl0">
+                     <div class="col-xxl-4 col-xl-4 col-lg-4 pl0">
                         <div class="right_panel_cart">
                            <div class="right_panel_personalization">
                               <h4>GIFTING & PERSONALISATION</h4>

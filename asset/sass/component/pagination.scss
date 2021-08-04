@@ -1,0 +1,46 @@
+.pagination_area{
+    .pagination_link{
+        a{
+            font-weight: 500 !important;
+            font-size: 15px;
+            i{
+                min-width: 20px;
+            }
+            &:hover{
+                color: $mainColor;
+                text-decoration: underline;
+            }
+        }
+    }
+    .pagination_number_dot{
+        ul{
+            li{
+                display: inline-block;
+                margin-right: 5px;
+                a{
+                    display: block;
+                    height: 35px;
+                    width: 35px;
+                    text-align: center;
+                    line-height: 35px;
+                    border-radius: 4px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    &:hover{
+                        background-color: #f3f5f9;
+                    }
+                }
+            }
+            .active{
+                a{
+                    background-color: #fe696a;
+                    color: #fff;
+                    box-shadow: 0 0.5rem 1.125rem -0.425rem rgba(254,105,106,0.9);
+                    &:hover{
+                        background-color: #fe696a;
+                    }
+                }
+            }
+        }
+    }
+}
