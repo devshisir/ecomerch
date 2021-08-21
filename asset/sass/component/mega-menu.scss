@@ -27,6 +27,12 @@
    opacity: 0;
    visibility: hidden;
    z-index: 99999999999999999;
+   max-height: 480px;
+   overflow-y: scroll;
+   -ms-overflow-style: none;  /* IE and Edge */
+   -o-overflow-style: none;  /* IE and Edge */
+   -webkit-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
    .mega_menu_item_box{
       padding: 20px 30px;
       flex: 1;
@@ -68,6 +74,19 @@
    .mega_menu_item_box_bg{
       background-color: #FBFBFB;
    }
+}
+
+.mega_menu_wrapper::-webkit-scrollbar {
+   display: none;
+}
+.mega_menu_wrapper::-moz-scrollbar {
+   display: none;
+}
+.mega_menu_wrapper::-o-scrollbar {
+   display: none;
+}
+.mega_menu_wrapper::-ms-scrollbar {
+   display: none;
 }
 
 
